@@ -1,0 +1,498 @@
+{
+  "paragraphs": [
+    {
+      "text": "%sh\n\nmkdir -p /tmp/DataQuality/\nmkdir -p /tmp/DataQuality/checkpoint/",
+      "user": "anonymous",
+      "dateUpdated": "2020-08-17 21:51:34.820",
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1597701094820_-669262665",
+      "id": "paragraph_1597697899587_-1619054277",
+      "dateCreated": "2020-08-17 21:51:34.820",
+      "status": "READY"
+    },
+    {
+      "text": "%sh\n\nrm -rf /dbfs/tmp/DataQuality/checkpoint\n\ncurl \"https://api.mockaroo.com/api/2aedaa80?count\u003d1000\u0026key\u003d8eb06b50\" \u003e /tmp/DataQuality/stockTicks.json",
+      "user": "anonymous",
+      "dateUpdated": "2020-08-17 21:51:34.821",
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1597701094821_-1777692836",
+      "id": "paragraph_1597697920566_-237095319",
+      "dateCreated": "2020-08-17 21:51:34.821",
+      "status": "READY"
+    },
+    {
+      "text": "%spark\n//convert json to parquet\nspark.read.json(\"/tmp/DataQuality/stockTicks.json\").repartition(100).write.mode(\"overwrite\").parquet(\"/tmp/DataQuality/source/\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-08-17 21:51:34.821",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1597701094821_-1309476618",
+      "id": "paragraph_1597697970948_1030942826",
+      "dateCreated": "2020-08-17 21:51:34.821",
+      "status": "READY"
+    },
+    {
+      "text": "import com.amazon.deequ.VerificationResult.{checkResultsAsDataFrame, checkResultsAsJson}\nimport com.amazon.deequ.checks.{Check, CheckLevel}\nimport com.amazon.deequ.suggestions.{ConstraintSuggestionRunner, Rules}\nimport com.amazon.deequ.{VerificationResult, VerificationSuite}\nimport org.apache.spark.sql.SparkSession",
+      "user": "anonymous",
+      "dateUpdated": "2020-08-17 21:51:34.821",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1597701094821_-876575139",
+      "id": "paragraph_1588765500148_1364684502",
+      "dateCreated": "2020-08-17 21:51:34.821",
+      "status": "READY"
+    },
+    {
+      "text": "val dataFile \u003d \"/tmp/DataQuality/source/\"\nval datasource \u003d spark.read.parquet(dataFile).cache()\nz.show(datasource)\n\n// datasource.show(truncate\u003dfalse)",
+      "user": "anonymous",
+      "dateUpdated": "2020-08-17 21:51:34.822",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "buysell": "string",
+                      "date": "string",
+                      "ipaddr": "string",
+                      "ordertype": "string",
+                      "price": "string",
+                      "quantity": "string",
+                      "symbol": "string",
+                      "time": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1597701094822_-1564092910",
+      "id": "paragraph_1588765525171_-1521255137",
+      "dateCreated": "2020-08-17 21:51:34.822",
+      "status": "READY"
+    },
+    {
+      "text": "//Analyzer \n\nimport com.amazon.deequ.analyzers.runners.{AnalysisRunner, AnalyzerContext}\nimport com.amazon.deequ.analyzers.runners.AnalyzerContext.successMetricsAsDataFrame\nimport com.amazon.deequ.analyzers.{Size, Completeness, Mean,CountDistinct,Uniqueness}\n\nval analysisResult: AnalyzerContext \u003d { AnalysisRunner\n  // data to run the analysis on\n  .onData(datasource)\n  // define analyzers that compute metrics\n.addAnalyzer(Size())\n.addAnalyzer(ApproxCountDistinct(\"symbol\"))\n.addAnalyzer(Distinctness(\"symbol\"))\n.addAnalyzer(Completeness(\"ipaddr\"))\n.addAnalyzer(Completeness(\"quantity\"))\n.addAnalyzer(Completeness(\"price\"))\n.addAnalyzer(Maximum(\"price\"))\n.addAnalyzer(Compliance(\"top quantity\", \"quantity \u003e\u003d 0\"))\n  // compute metrics\n  .run()\n}\n\n// retrieve successfully computed metrics as a Spark data frame\nval metrics \u003d successMetricsAsDataFrame(spark, analysisResult)\nmetrics.show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-08-17 21:51:34.824",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1597701094824_1195244382",
+      "id": "paragraph_1588861527405_1788372748",
+      "dateCreated": "2020-08-17 21:51:34.824",
+      "status": "READY"
+    },
+    {
+      "text": "import com.amazon.deequ.profiles.{ColumnProfilerRunner, NumericColumnProfile}\n\nval result \u003d {ColumnProfilerRunner()\n      .onData(datasource)\n      .run()}\n\nresult.profiles.foreach { case (productName, profile) \u003d\u003e\n\n      println(s\"Column \u0027$productName\u0027:\\n \" +\n        s\"\\tcompleteness: ${profile.completeness}\\n\" +\n        s\"\\tapproximate number of distinct values: ${profile.approximateNumDistinctValues}\\n\" +\n        s\"\\tdatatype: ${profile.dataType}\\n\")\n    }",
+      "user": "anonymous",
+      "dateUpdated": "2020-08-17 21:51:34.825",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1597701094825_-641592233",
+      "id": "paragraph_1588862314625_-737447953",
+      "dateCreated": "2020-08-17 21:51:34.825",
+      "status": "READY"
+    },
+    {
+      "text": "val priceProfile \u003d result.profiles(\"price\").asInstanceOf[NumericColumnProfile]\n\nprintln(s\"Statistics of \u0027priceProfile\u0027:\\n\" +\n  s\"\\tminimum: ${priceProfile.minimum.get}\\n\" +\n  s\"\\tmaximum: ${priceProfile.maximum.get}\\n\" +\n  s\"\\tmean: ${priceProfile.mean.get}\\n\" +\n  s\"\\tstandard deviation: ${priceProfile.stdDev.get}\\n\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-08-17 21:51:34.825",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1597701094825_391125739",
+      "id": "paragraph_1588863233170_-499728604",
+      "dateCreated": "2020-08-17 21:51:34.825",
+      "status": "READY"
+    },
+    {
+      "text": "val orderTypeProfile \u003d result.profiles(\"ordertype\")\n\nprintln(\"Value distribution in \u0027ordertype\u0027:\")\norderTypeProfile.histogram.foreach {\n  _.values.foreach { case (key, entry) \u003d\u003e\n    println(s\"\\t\u0027$key\u0027 occurred ${entry.absolute} times (ratio is ${entry.ratio})\")\n  }\n}",
+      "user": "anonymous",
+      "dateUpdated": "2020-08-17 21:51:34.825",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1597701094825_585170747",
+      "id": "paragraph_1588863312441_-1200939799",
+      "dateCreated": "2020-08-17 21:51:34.825",
+      "status": "READY"
+    },
+    {
+      "text": "   val verificationResult: VerificationResult \u003d { VerificationSuite()\n      // data to run the verification on\n      .onData(datasource)\n      // define a data quality check\n      .addCheck(\n       Check(CheckLevel.Error, \"unitTest\")\n      .hasMax(\"quantity\", _ \u003c\u003d 10000) // max is 10000\n      .hasCompleteness(\"ipaddr\", _ \u003e\u003d 0.95) // 95%+ non-null IPs\n      .isNonNegative(\"quantity\")) // should not contain negative values\n        .addCheck(  \n        Check(CheckLevel.Warning, \"Checks\")\n         .hasSize(_ \u003e\u003d 1001))\n        .run()\n    }\n\n    val resultDataFrame \u003d checkResultsAsDataFrame(spark, verificationResult)\n    println(resultDataFrame.show(truncate\u003dfalse))\n    val resultJson \u003d checkResultsAsJson(verificationResult )\n    println(resultJson)",
+      "user": "anonymous",
+      "dateUpdated": "2020-08-17 21:51:34.825",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1597701094825_-1741424713",
+      "id": "paragraph_1588863674616_2125299254",
+      "dateCreated": "2020-08-17 21:51:34.825",
+      "status": "READY"
+    },
+    {
+      "text": "\n//Suggestion Data\n\nval suggestionResult \u003d {\n      ConstraintSuggestionRunner()\n        // data to suggest constraints for\n        .onData(datasource)\n        // default set of rules for constraint suggestion\n        .addConstraintRules(Rules.DEFAULT)\n        // run data profiling and constraint suggestion\n        .run()\n    }\n suggestionResult.constraintSuggestions.foreach { case (column, suggestions) \u003d\u003e\n  suggestions.foreach { suggestion \u003d\u003e\n    println(s\"Constraint suggestion for \u0027$column\u0027:\\t${suggestion.description}\\n\" +\n      s\"The corresponding scala code is ${suggestion.codeForConstraint}\\n\")\n  }\n}",
+      "user": "anonymous",
+      "dateUpdated": "2020-08-17 21:51:34.826",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1597701094825_2009704706",
+      "id": "paragraph_1588765688368_-1188383627",
+      "dateCreated": "2020-08-17 21:51:34.826",
+      "status": "READY"
+    },
+    {
+      "text": "//Anomaly detection\n\nimport com.amazon.deequ.VerificationSuite\nimport com.amazon.deequ.analyzers.Size\nimport com.amazon.deequ.anomalydetection._\nimport com.amazon.deequ.repository.ResultKey\nimport com.amazon.deequ.repository.memory.InMemoryMetricsRepository\nimport com.amazon.deequ.checks.CheckStatus._\n\nval metricsRepository \u003d new InMemoryMetricsRepository()\nval yesterdaysDataset \u003d datasource.limit(5)\n  \nval yesterdaysKey \u003d ResultKey(System.currentTimeMillis() - 24 * 60 * 1000)\n\nVerificationSuite()\n  .onData(yesterdaysDataset)\n  .useRepository(metricsRepository)\n  .saveOrAppendResult(yesterdaysKey)\n  .addAnomalyCheck(\n    RelativeRateOfChangeStrategy(maxRateIncrease \u003d Some(2.0)),\n    Size())\n  .run()",
+      "user": "anonymous",
+      "dateUpdated": "2020-08-17 21:51:34.826",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1597701094826_1469662882",
+      "id": "paragraph_1588771181374_354449462",
+      "dateCreated": "2020-08-17 21:51:34.826",
+      "status": "READY"
+    },
+    {
+      "text": "val todaysKey \u003d ResultKey(System.currentTimeMillis())\n\nval verificationResult \u003d VerificationSuite()\n  .onData(datasource)\n  .useRepository(metricsRepository)\n  .saveOrAppendResult(todaysKey)\n  .addAnomalyCheck(\n    RelativeRateOfChangeStrategy(maxRateIncrease \u003d Some(2.0)),\n    Size())\n  .run()",
+      "user": "anonymous",
+      "dateUpdated": "2020-08-17 21:51:34.826",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1597701094826_1632147595",
+      "id": "paragraph_1588773668682_234076112",
+      "dateCreated": "2020-08-17 21:51:34.826",
+      "status": "READY"
+    },
+    {
+      "text": "metricsRepository\n    .load()\n    .forAnalyzers(Seq(Size()))\n    .getSuccessMetricsAsDataFrame(spark)\n    .show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-08-17 21:51:34.826",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1597701094826_-2147324677",
+      "id": "paragraph_1588774862400_-2083290552",
+      "dateCreated": "2020-08-17 21:51:34.826",
+      "status": "READY"
+    },
+    {
+      "text": "verificationResult.status",
+      "user": "anonymous",
+      "dateUpdated": "2020-08-17 21:51:34.826",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1597701094826_2113240687",
+      "id": "paragraph_1588775141484_-1293299130",
+      "dateCreated": "2020-08-17 21:51:34.826",
+      "status": "READY"
+    },
+    {
+      "text": "%sh\n\nrm -rf  /tmp/DataQuality/",
+      "user": "anonymous",
+      "dateUpdated": "2020-08-17 21:51:34.826",
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1597701094826_-776952056",
+      "id": "paragraph_1597699648531_1655760287",
+      "dateCreated": "2020-08-17 21:51:34.826",
+      "status": "READY"
+    }
+  ],
+  "name": "deequ_demo",
+  "id": "2FHP3E7G8",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.9.0-preview1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}
