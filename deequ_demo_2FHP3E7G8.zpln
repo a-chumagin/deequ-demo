@@ -3,7 +3,7 @@
     {
       "text": "%sh\n\nmkdir -p /tmp/DataQuality/\nmkdir -p /tmp/DataQuality/checkpoint/",
       "user": "anonymous",
-      "dateUpdated": "2020-08-17 21:51:34.820",
+      "dateUpdated": "2020-08-26 11:24:26.540",
       "config": {
         "editorSetting": {
           "language": "sh",
@@ -20,18 +20,24 @@
       "settings": {
         "params": {},
         "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
       },
       "apps": [],
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1597701094820_-669262665",
       "id": "paragraph_1597697899587_-1619054277",
       "dateCreated": "2020-08-17 21:51:34.820",
-      "status": "READY"
+      "dateStarted": "2020-08-26 11:24:26.637",
+      "dateFinished": "2020-08-26 11:24:29.051",
+      "status": "FINISHED"
     },
     {
       "text": "%sh\n\nrm -rf /dbfs/tmp/DataQuality/checkpoint\n\ncurl \"https://api.mockaroo.com/api/2aedaa80?count\u003d1000\u0026key\u003d8eb06b50\" \u003e /tmp/DataQuality/stockTicks.json",
       "user": "anonymous",
-      "dateUpdated": "2020-08-17 21:51:34.821",
+      "dateUpdated": "2020-08-26 11:24:41.896",
       "config": {
         "editorSetting": {
           "language": "sh",
@@ -49,17 +55,28 @@
         "params": {},
         "forms": {}
       },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:11 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:12 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:13 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:14 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:15 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:16 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:17 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:18 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:19 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:20 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:21 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:22 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:23 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:24 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:25 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:26 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:27 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:28 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:29 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:30 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:31 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:32 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:33 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:34 --:--:--     0\r100 45056    0 45056    0     0   1279      0 --:--:--  0:00:35 --:--:-- 10025\r100  149k    0  149k    0     0   4309      0 --:--:--  0:00:35 --:--:-- 40250\n"
+          }
+        ]
+      },
       "apps": [],
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1597701094821_-1777692836",
       "id": "paragraph_1597697920566_-237095319",
       "dateCreated": "2020-08-17 21:51:34.821",
-      "status": "READY"
+      "dateStarted": "2020-08-26 11:24:41.921",
+      "dateFinished": "2020-08-26 11:25:17.563",
+      "status": "FINISHED"
     },
     {
       "text": "%spark\n//convert json to parquet\nspark.read.json(\"/tmp/DataQuality/stockTicks.json\").repartition(100).write.mode(\"overwrite\").parquet(\"/tmp/DataQuality/source/\")",
       "user": "anonymous",
-      "dateUpdated": "2020-08-17 21:51:34.821",
+      "dateUpdated": "2020-08-26 11:26:47.417",
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -76,18 +93,24 @@
       "settings": {
         "params": {},
         "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
       },
       "apps": [],
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1597701094821_-1309476618",
       "id": "paragraph_1597697970948_1030942826",
       "dateCreated": "2020-08-17 21:51:34.821",
-      "status": "READY"
+      "dateStarted": "2020-08-26 11:26:47.446",
+      "dateFinished": "2020-08-26 11:27:22.818",
+      "status": "FINISHED"
     },
     {
       "text": "import com.amazon.deequ.VerificationResult.{checkResultsAsDataFrame, checkResultsAsJson}\nimport com.amazon.deequ.checks.{Check, CheckLevel}\nimport com.amazon.deequ.suggestions.{ConstraintSuggestionRunner, Rules}\nimport com.amazon.deequ.{VerificationResult, VerificationSuite}\nimport org.apache.spark.sql.SparkSession",
       "user": "anonymous",
-      "dateUpdated": "2020-08-17 21:51:34.821",
+      "dateUpdated": "2020-08-26 11:27:41.494",
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -105,17 +128,28 @@
         "params": {},
         "forms": {}
       },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import com.amazon.deequ.VerificationResult.{checkResultsAsDataFrame, checkResultsAsJson}\nimport com.amazon.deequ.checks.{Check, CheckLevel}\nimport com.amazon.deequ.suggestions.{ConstraintSuggestionRunner, Rules}\nimport com.amazon.deequ.{VerificationResult, VerificationSuite}\nimport org.apache.spark.sql.SparkSession\n"
+          }
+        ]
+      },
       "apps": [],
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1597701094821_-876575139",
       "id": "paragraph_1588765500148_1364684502",
       "dateCreated": "2020-08-17 21:51:34.821",
-      "status": "READY"
+      "dateStarted": "2020-08-26 11:27:41.511",
+      "dateFinished": "2020-08-26 11:27:42.201",
+      "status": "FINISHED"
     },
     {
       "text": "val dataFile \u003d \"/tmp/DataQuality/source/\"\nval datasource \u003d spark.read.parquet(dataFile).cache()\nz.show(datasource)\n\n// datasource.show(truncate\u003dfalse)",
       "user": "anonymous",
-      "dateUpdated": "2020-08-17 21:51:34.822",
+      "dateUpdated": "2020-08-26 11:28:25.456",
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -134,7 +168,108 @@
               "optionOpen": false,
               "setting": {
                 "table": {
-                  "tableGridState": {},
+                  "tableGridState": {
+                    "columns": [
+                      {
+                        "name": "buysell0",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "date1",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "ipaddr2",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "ordertype3",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "price4",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {
+                          "priority": 0.0,
+                          "direction": "desc"
+                        },
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "quantity5",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {
+                          "priority": 1.0,
+                          "direction": "desc"
+                        },
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "symbol6",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "time7",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      }
+                    ],
+                    "scrollFocus": {},
+                    "selection": [],
+                    "grouping": {
+                      "grouping": [],
+                      "aggregations": [],
+                      "rowExpandedStates": {}
+                    },
+                    "treeView": {},
+                    "pagination": {
+                      "paginationCurrentPage": 1.0,
+                      "paginationPageSize": 250.0
+                    }
+                  },
                   "tableColumnTypeState": {
                     "names": {
                       "buysell": "string",
@@ -168,17 +303,32 @@
         "params": {},
         "forms": {}
       },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "buysell\tdate\tipaddr\tordertype\tprice\tquantity\tsymbol\ttime\nsell\t08/30/2019\t101.135.110.106\tmarket\t32.2344\t526.1885\tAPLP\t15:40:14\nsell\t08/24/2019\t80.68.71.247\tcross\t30.338\t1436.279\tXON\t1:59:10\nsell\t08/15/2019\t178.20.161.83\toco\t18.9072\t1854.6471\tPSA^D\t11:48:00\nbuy\t08/09/2019\t102.139.16.183\tmarketToLimit\t26.316\t888.24\tSRCE\t3:06:39\nbuy\t08/05/2019\t210.81.153.35\tquote\t18.3441\t1642.858\tCBOE\t22:30:43\nsell\t08/01/2019\t66.196.51.172\tlimit\t18.9216\t3999.2838\tRTTR\t19:34:11\nbuy\t08/18/2019\t145.106.242.69\tmarketToLimit\t25.8401\t2691.5927\tAMSF\t23:38:37\nsell\t08/09/2019\t81.178.72.158\tcross\t7.1424\t3294.395\tLOW\t6:20:32\nsell\t08/27/2019\t87.132.190.192\tmarket\t59.5386\t2433.86\tUTL\t5:16:31\nbuy\t08/10/2019\t72.238.115.113\tquote\t46.6098\t1795.9344\tUNP\t14:18:40\nnull\t08/14/2019\t92.226.36.51\toco\t14.0389\t2062.018\tPSA^S\t10:15:41\nsell\t08/09/2019\t233.247.130.199\tbestLimit\t22.304\t2436.368\tWRLD\t8:59:00\nbuy\t08/02/2019\t215.108.87.252\tlimit\t38.6334\t1336.9905\tGGP\t1:07:59\nbuy\t08/17/2019\t179.78.26.81\tmarket\t20.1537\t2246.9488\tGFY\t14:54:45\nsell\t08/07/2019\t157.7.29.104\tmarket\t16.4358\t3052.5111\tAFST\t5:19:24\nbuy\t08/11/2019\t151.89.55.166\tcmo\t8.976\t2473.706\tDTJ\t1:42:59\nbuy\t08/25/2019\t248.225.102.227\tcross\t16.4538\t1548.6856\tVSI\t15:23:06\nsell\t08/19/2019\t22.29.169.59\tquote\t15.7056\t3218.3221\tUBIO\t12:45:29\nbuy\t08/09/2019\t238.6.38.116\toco\t25.4538\t1136.0416\tUSAC\t7:02:50\nsell\t08/02/2019\t242.31.63.190\tmarketToLimit\t13.112\t2021.4285\tDOW\t18:38:49\nbuy\t08/23/2019\t46.224.174.175\tquote\t6.084\t5009.4656\tFIVE\t13:24:22\nsell\t08/23/2019\t253.213.78.88\tcross\t17.8797\t2640.4385\tHCN\t9:44:59\nbuy\t08/12/2019\t44.8.94.242\tmarket\t16.459\t1930.2204\tYLDE\t10:33:23\nnull\t08/17/2019\t174.163.176.71\tcross\t19.788\t2898.114\tCUZ\t5:43:03\nbuy\t08/13/2019\t52.230.185.190\tbestLimit\t32.4408\t611.184\tSRTS\t11:15:54\nbuy\t08/29/2019\t221.246.95.19\toco\t22.2425\t2792.1658\tOREX\t0:04:49\nbuy\t08/25/2019\t205.255.234.213\tlimit\t12.4488\t3843.2718\tBUSE\t21:14:40\nsell\t08/19/2019\t178.198.150.41\tcmo\t19.056\t1436.61\tNRK\t10:08:43\nbuy\t08/27/2019\t171.145.0.230\tbestLimit\t7.7544\t2609.704\tLMFAW\t9:58:38\nbuy\t08/26/2019\t94.254.187.200\tcmo\t19.104\t2487.5928\tNTRSP\t16:34:42\nbuy\t08/04/2019\t229.144.93.251\tbestLimit\t26.465\t123.2132\tPIRS\t11:14:09\nsell\t08/13/2019\t177.197.231.209\tquote\t22.8916\t2757.4792\tNCA\t2:46:56\nsell\t08/06/2019\t76.22.216.47\tmarketToLimit\t9.6525\t1618.64\tBLFS\t7:44:22\nsell\t08/12/2019\t102.109.229.233\tbestLimit\t21.3906\t723.5478\tPICO\t1:46:32\nsell\t08/12/2019\t20.241.55.209\toco\t10.2486\t1690.5252\tDXPE\t14:30:54\nsell\t08/13/2019\t163.69.168.137\tcross\t24.5828\t3243.4076\tAHL^D\t21:34:27\nbuy\t08/10/2019\t107.119.233.129\tlimit\t11.55\t2049.323\tCNAT\t16:51:45\nsell\t08/10/2019\t136.46.183.198\tmarket\t26.9595\t4157.5248\tMBRX\t3:16:42\nsell\t08/18/2019\t214.205.17.175\tcmo\t14.443\t989.736\tFVE\t1:29:49\nbuy\t08/10/2019\t103.22.178.176\tlimit\tnull\t1325.6946\tICUI\t12:31:29\nbuy\t08/11/2019\t65.92.119.245\tquote\t18.6675\t1320.678\tBLPH\t16:43:42\nbuy\t08/29/2019\t253.93.117.207\tbestLimit\t25.7621\t1934.634\tCTBB\t1:58:50\nbuy\t08/24/2019\t94.163.92.242\tquote\t34.6212\t1429.558\tGPK\t1:10:16\nsell\t08/21/2019\t209.45.33.77\tbestLimit\t23.4118\t2985.5115\tLXP\t19:59:18\nbuy\t08/16/2019\t244.124.175.228\toco\t10.4718\t1141.6912\tSTFC\t20:16:26\nbuy\t08/29/2019\t172.135.201.40\tmarket\t24.336\t2645.4935\tTOO^A\t7:32:34\nsell\t08/21/2019\t111.134.128.198\tcross\t31.1139\t4016.1972\tSWIN\t11:45:49\nbuy\t08/19/2019\t39.236.40.140\tcmo\t16.4934\t2889.5545\tPCOM\t16:27:45\nsell\t08/22/2019\t174.167.186.133\tcmo\t7.3548\t1986.285\tASRVP\t21:37:32\nbuy\t08/26/2019\t49.59.141.162\tcross\t27.0399\t3331.2825\tKELYB\t7:38:20\nbuy\t08/14/2019\t120.193.133.197\toco\t33.8052\t4254.4952\tNFG\t0:39:57\nsell\t08/22/2019\t223.70.180.29\tcmo\t20.5751\t2676.0927\tGWW\t23:01:45\nsell\t08/09/2019\t29.129.94.61\tbestLimit\t13.144\t3651.5664\tSYK\t17:17:01\nsell\t08/17/2019\t182.91.188.155\tbatch\t13.8644\t1378.1294\tGOL\t16:39:40\nsell\t08/24/2019\t47.83.105.75\tmarketToLimit\t17.6936\t1990.9244\tOESX\t18:24:14\nsell\t08/11/2019\t122.225.251.110\toco\t34.782\t2860.2938\tARR^B\t10:12:29\nsell\t08/09/2019\t90.234.135.129\tlimit\t22.6935\t1731.8951\tMTSC\t21:19:39\nsell\t08/02/2019\t170.2.42.99\toco\t14.706\t3041.4076\tRAS^C\t5:36:01\nbuy\t08/01/2019\t71.97.63.58\tquote\t4.1447\t1810.7726\tPOST\t18:46:09\nbuy\t08/10/2019\t93.73.37.114\tmarketToLimit\t49.9437\t2137.3046\tNVS\t10:01:12\nsell\t08/21/2019\t135.152.90.120\tlimit\t17.178\t1016.7417\tAFW.CL\t2:05:44\nbuy\t08/19/2019\t129.252.196.122\tmarket\t6.9419\t999.6576\tNTAP\t1:15:05\nnull\t08/06/2019\t58.141.79.107\toco\t39.4168\t3115.4592\tGOOG\t16:00:35\nbuy\t08/30/2019\t183.6.85.164\tquote\tnull\t3285.1665\tLPNT\t20:34:34\nbuy\t08/26/2019\t88.136.171.146\tbestLimit\t16.1445\t2602.844\tTRCH\t2:51:26\nsell\t08/30/2019\t174.208.16.69\tmarketToLimit\t26.3592\t2817.4758\tORIG\t10:39:27\nbuy\t08/23/2019\t211.34.151.225\tbatch\t13.4688\t2542.5675\tHRG\t4:00:38\nbuy\t08/30/2019\t91.231.65.85\tmarketToLimit\t5.264\t1822.212\tRGEN\t10:29:03\nsell\t08/09/2019\t225.59.195.122\tlimit\t28.4444\t3167.5059\tTARO\t23:08:59\nsell\t08/19/2019\t33.100.144.230\tcross\t3.3525\t2059.2868\tBKEPP\t4:18:00\nsell\t08/24/2019\t152.60.116.31\tlimit\t33.63\t4724.2926\tMUC\t15:07:20\nbuy\t08/25/2019\t239.211.25.241\tquote\t16.6402\t1148.3304\tMFA^B\t12:47:55\nbuy\t08/06/2019\t92.196.97.165\tlimit\t24.863\t3713.3275\tFLY\t23:21:30\nbuy\t08/25/2019\t4.223.199.120\tcross\t15.5427\t1560.566\tABAX\t17:41:10\nsell\t08/16/2019\t237.10.16.8\tbestLimit\t3.7325\t4648.1448\tARRS\t15:45:43\nbuy\t08/12/2019\t187.70.238.204\tmarketToLimit\t19.8688\t-1.0\tPUMP\t19:06:54\nsell\t08/03/2019\t160.155.22.203\toco\t18.7668\t2428.1712\tTNP^B\t11:27:14\nsell\t08/08/2019\t137.42.145.21\tcross\t29.9376\t1928.9952\tIPI\t17:13:29\nbuy\t08/21/2019\t1.201.14.164\tbatch\t47.4222\t629.2566\tITG\t12:53:00\nsell\t08/22/2019\t215.123.136.145\tcross\t21.9225\t1873.384\tGWR\t7:09:26\nsell\t08/26/2019\t64.230.68.203\tquote\t33.1821\t156.2304\tQRVO\t22:04:31\nsell\t08/08/2019\t147.211.113.227\tquote\t12.1713\t2078.912\tCPAA\t11:30:27\nsell\t08/15/2019\t102.107.130.123\tcross\t15.1646\t1424.5497\tATU\t1:22:02\nsell\t08/06/2019\t115.168.106.209\tlimit\t23.3016\t3392.586\tPCLN\t13:24:18\nbuy\t08/23/2019\t12.71.150.209\tcross\t35.7\t2821.95\tGOOG\t4:55:20\nsell\t08/30/2019\t33.219.98.250\tbatch\t20.2849\t1531.6574\tCLNT\t0:25:36\nbuy\t08/29/2019\t148.92.184.39\toco\t18.66\t2728.0116\tMET^A\t10:24:51\nsell\t08/30/2019\t31.234.239.204\tquote\t23.0692\t1256.9298\tPSCU\t3:33:00\nsell\t08/08/2019\t89.124.51.36\tmarketToLimit\t35.8022\t2714.551\tMGPI\t17:45:30\nbuy\t08/28/2019\t172.109.48.4\tbestLimit\t37.2385\t3087.5147\tSIRI\t19:18:08\nsell\t08/20/2019\t129.154.93.75\tcross\t10.276\t919.0072\tDFS\t7:57:59\nbuy\t08/12/2019\t64.194.43.122\tmarket\t32.1384\t2067.4992\tEBR\t8:28:56\nbuy\t08/27/2019\t92.78.131.27\tbestLimit\t31.5084\t2388.7983\tFNK\t15:27:52\nsell\t08/18/2019\t150.148.116.160\tquote\t43.1056\t3140.7672\tCME\t20:16:03\nsell\t08/23/2019\t90.252.121.16\toco\t33.0812\t385.81\tNLY^A\t21:41:56\nbuy\t08/03/2019\t66.217.128.0\tquote\t11.6802\t2116.6494\tABC\t5:06:34\nsell\t08/11/2019\t207.100.155.10\tcmo\t28.1464\t648.0612\tCNNX\t15:09:59\nbuy\t08/25/2019\t144.195.225.209\tmarket\t26.202\t1000.0146\tESNT\t9:17:12\nbuy\t08/03/2019\t21.125.35.77\tquote\t27.7764\t511.6896\tSSL\t0:36:32\nbuy\t08/22/2019\t117.238.120.249\tbatch\t8.856\t2414.5392\tLDRI\t5:19:38\nbuy\t08/07/2019\t24.193.30.216\tmarketToLimit\t5.313\t2156.2362\tLEJU\t19:11:52\nbuy\t08/23/2019\t243.96.76.252\tcross\t20.715\t318.7234\tCASS\t3:58:01\nsell\t08/18/2019\t156.111.154.67\tcross\t8.2005\t1553.776\tTUP\t21:43:45\nsell\t08/11/2019\t36.236.10.42\tquote\t37.0008\t2470.152\tVRTX\t9:56:18\nbuy\t08/22/2019\t214.235.223.56\tmarket\t3.6828\t1796.613\tOME\t8:23:35\nsell\t08/13/2019\t29.227.109.95\tcmo\t28.4333\t2175.7528\tFSB\t11:21:54\nnull\t08/29/2019\t117.5.111.22\tbestLimit\t12.9857\t1670.4144\tDRA\t12:35:23\nsell\t08/29/2019\t8.188.78.129\tbestLimit\t13.12\t333.7092\tPCI\t8:39:10\nbuy\t08/30/2019\t35.199.94.234\tbestLimit\t17.8308\t96.406\tPGTI\t17:43:28\nsell\t08/21/2019\t163.142.107.120\tmarketToLimit\t34.112\t2308.2644\tAROC\t9:04:23\nsell\t08/10/2019\t59.138.209.83\tmarket\t35.5719\t1971.5376\tTSRI\t8:53:22\nsell\t08/02/2019\t210.198.68.19\toco\t27.6678\t3158.5437\tJMF\t0:18:35\nsell\t08/05/2019\t165.55.141.126\tbestLimit\t12.3768\t1428.0648\tDENN\t6:44:35\nsell\t08/11/2019\t73.156.80.185\tquote\t24.1898\t2448.182\tADSW\t0:34:51\nbuy\t08/04/2019\t24.153.237.93\tlimit\t9.222\t3007.806\tAHH\t18:52:21\nsell\t08/28/2019\t210.54.42.39\tcross\t26.7246\t3285.117\tGTYHU\t3:26:38\nbuy\t08/28/2019\t1.241.72.15\tquote\t40.8665\t1967.752\tLCNB\t6:32:31\nbuy\t08/29/2019\t234.42.170.37\tlimit\t27.804\t1890.0375\tIVTY\t21:39:46\nbuy\t08/27/2019\t183.32.127.58\tmarketToLimit\t32.242\t1655.1684\tHNP\t10:20:20\nsell\t08/17/2019\t200.42.191.215\tmarketToLimit\t15.7043\t801.2178\tCVA\t11:01:48\nbuy\t08/23/2019\t98.173.1.139\tbatch\t20.1728\t1278.3048\tGBX\t23:35:08\nbuy\t08/05/2019\t101.172.169.112\tbestLimit\t17.304\t727.08\tTVIA\t1:14:44\nbuy\t08/14/2019\t36.239.53.189\tquote\t9.6773\t2504.1555\tC\t17:57:45\nsell\t08/17/2019\t209.209.238.14\tbatch\t5.0236\t2199.2646\tENB\t21:18:35\nsell\t08/07/2019\t180.106.144.31\tcmo\t6.6183\t3226.7406\tEARN\t22:29:15\nsell\t08/08/2019\t143.41.61.163\tmarket\t19.3232\t1300.5522\tSNOA\t3:08:16\nbuy\t08/18/2019\t61.122.237.166\tcmo\t21.2135\t2494.29\tGPAC\t3:11:51\nsell\t08/27/2019\t206.157.201.10\tbestLimit\t14.6952\t2181.7517\tCBIO\t4:44:36\nbuy\t08/24/2019\t96.228.56.87\tcross\t19.2741\t861.408\tCHSP^A.CL\t6:52:14\nsell\t08/07/2019\t202.66.138.0\toco\t7.74\t1720.5237\tMRUS\t16:30:56\nbuy\t08/15/2019\t165.108.171.25\tmarket\t23.0126\t1791.335\tINCY\t7:27:14\nbuy\t08/22/2019\t28.98.203.143\tbestLimit\t3.3775\t528.736\tDTEA\t1:04:29\nbuy\t08/01/2019\t192.58.93.22\tmarket\t27.5814\t2584.4\tAPRI\t22:30:49\nsell\t08/03/2019\t0.194.197.112\tquote\t28.5864\t3249.902\tHTGC\t4:53:46\nsell\t08/22/2019\t76.109.18.148\tquote\t26.144\t1828.0788\tVAC\t11:55:15\nbuy\t08/29/2019\t178.200.87.10\tmarketToLimit\t20.7129\t1251.8443\tHPS\t21:42:14\nsell\t08/16/2019\t29.134.24.89\tcross\t23.6304\t2399.8\tWSTG\t13:06:42\nbuy\t08/07/2019\t15.196.99.142\tquote\t23.2029\t2710.7297\tPSTG\t0:20:35\nsell\t08/11/2019\t143.109.43.68\tmarket\t4.27\t1643.8114\tGIGA\t5:18:31\nsell\t08/09/2019\t15.111.104.238\tmarketToLimit\t19.803\t451.2423\tAMZN\t4:01:50\nsell\t08/05/2019\t13.155.128.79\tbestLimit\t18.9832\t3211.2207\tVLGEA\t7:14:21\nsell\t08/26/2019\t157.21.103.124\tbestLimit\t30.1942\t1322.2862\tMMYT\t16:50:34\nnull\t08/20/2019\t116.238.196.39\tcmo\t24.5657\t1186.4496\tMIN\t22:06:59\nsell\t08/07/2019\t120.250.107.145\tmarket\t12.5706\t1341.7518\tSIRI\t12:01:24\nsell\t08/22/2019\t37.56.124.181\tbatch\t36.5082\t3468.7046\tSAVE\t18:00:24\nbuy\t08/28/2019\t62.13.188.206\tcmo\t20.228\t2163.5096\tLVNTB\t9:00:07\nbuy\t08/06/2019\t89.101.164.76\tcmo\t21.3762\t3390.3828\tNUROW\t4:03:30\nbuy\t08/16/2019\t143.33.95.90\toco\t19.8814\t1499.2716\tEBIO\t1:21:43\nsell\t08/07/2019\t174.30.53.39\tcross\t9.801\t2832.375\tCCCR\t16:11:17\nbuy\t08/01/2019\t214.60.2.154\tmarket\t7.686\t1888.3816\tWERN\t21:27:32\nbuy\t08/27/2019\t48.142.94.116\tmarket\t18.0225\t2546.5278\tGAIN\t17:07:48\nbuy\t08/09/2019\t163.70.19.63\tlimit\t13.7816\t1660.949\tSSW^G\t12:37:44\nsell\t08/01/2019\t231.21.190.52\tmarketToLimit\t5.8617\t3761.604\tMMD\t6:49:36\nsell\t08/26/2019\t151.225.216.110\tcmo\t25.9362\t1036.549\tIIVI\t3:16:24\nbuy\t08/23/2019\t140.147.88.70\tcmo\t24.8724\t2367.216\tBRS\t19:47:27\nbuy\t08/28/2019\t87.28.78.31\tcmo\t15.1298\t1023.4434\tBLL\t10:23:44\nbuy\t08/07/2019\t162.188.198.235\tcross\t23.9335\t3332.972\tHRB\t17:55:21\nsell\t08/16/2019\t120.195.40.18\tcross\t14.2245\t2358.86\tAMH^D\t3:00:26\nsell\t08/13/2019\t41.156.18.188\toco\t25.2448\t1736.1828\tRDVY\t20:22:52\nsell\t08/27/2019\t234.37.250.112\tquote\t14.4768\t1980.5492\tREX\t1:01:51\nsell\t08/15/2019\t196.126.51.84\tcmo\t25.65\t3705.1708\tMRCC\t0:53:57\nbuy\t08/19/2019\t132.189.70.125\tmarketToLimit\t27.1782\t1197.6048\tLYB\t19:08:21\nnull\t08/04/2019\t51.249.80.133\tquote\t21.0912\t2542.6128\tQBAK\t0:24:10\nbuy\t08/25/2019\t220.222.48.134\tbestLimit\t16.0974\t1053.7532\tWHLRP\t12:10:19\nsell\t08/17/2019\t112.119.165.20\tbestLimit\t14.6744\t1954.1967\tWSM\t12:11:58\nsell\t08/22/2019\t30.124.208.240\tquote\t31.4562\t2527.55\tFRC^H\t5:37:29\nbuy\t08/30/2019\t47.73.66.94\tquote\t25.8384\t4500.014\tBA\t2:52:24\nbuy\t08/15/2019\t245.6.233.36\tquote\t21.4024\t758.8542\tFDUS\t9:51:24\nsell\t08/29/2019\t79.248.21.95\tlimit\t11.0796\t1968.1326\tCUBI^C\t22:08:42\nsell\t08/08/2019\t133.115.54.62\tlimit\t22.8705\t2998.4912\tIBKCP\t3:44:48\nsell\t08/01/2019\t161.34.149.16\toco\t19.5763\t1679.041\tSNDX\t4:48:43\nsell\t08/04/2019\t101.49.188.248\tmarketToLimit\t16.1859\t2313.315\tEEA\t16:57:07\nsell\t08/26/2019\t102.12.45.126\tcmo\t14.4768\t1504.8187\tHCAP\t8:34:50\nbuy\t08/13/2019\t212.247.173.144\tcmo\t23.7241\t2323.0976\tSNI\t1:17:58\nsell\t08/23/2019\t29.216.23.254\tcross\t19.7771\t1605.9256\tFITBI\t5:15:33\nbuy\t08/07/2019\t171.142.207.133\tbatch\t14.9034\t2390.6239\tINSE\t9:20:52\nbuy\t08/24/2019\t25.175.18.14\tbatch\t57.1648\t2197.8504\tENB\t4:08:39\nsell\t08/08/2019\t218.104.173.68\tlimit\t18.209\t3617.6756\tNSTG\t4:56:13\nbuy\t08/24/2019\t59.252.97.80\tbatch\t29.0421\t765.924\tROYT\t6:22:24\nnull\t08/23/2019\t169.54.167.96\tquote\t18.036\t1732.6548\tIQI\t15:02:54\nnull\t08/05/2019\t224.149.254.109\tcross\t28.5456\t1765.32\tBSRR\t9:34:53\nbuy\t08/05/2019\t158.88.144.7\toco\t25.432\t1695.0552\tMMP\t5:50:57\nsell\t08/14/2019\t53.233.27.154\tlimit\t27.9807\t2395.5372\tVIDI\t15:06:24\nsell\t08/26/2019\t144.58.6.32\tcross\t46.332\t2325.9837\tTVIA\t16:39:27\nsell\t08/07/2019\t77.159.108.12\tmarket\t23.2674\t3151.6026\tMDCO\t18:59:18\nbuy\t08/29/2019\t97.50.99.230\tbatch\t11.7725\t2198.4501\tPRAN\t0:55:56\nsell\t08/04/2019\t123.170.243.243\tlimit\t30.6764\t2263.1383\tCYRX\t19:00:00\nsell\t08/11/2019\t223.67.245.191\tmarket\t17.34\t724.2466\tGOOG\t16:36:54\nbuy\t08/05/2019\t6.238.79.171\tcmo\t26.1648\t4095.931\tPAYX\t8:20:33\nsell\t08/24/2019\t8.18.215.125\tquote\t41.2776\t1390.4232\tNMK^C\t10:04:03\nbuy\t08/27/2019\t181.238.228.83\tmarket\t34.1952\t3213.022\tFKLYU\t1:13:31\nsell\t08/21/2019\t72.166.101.139\tquote\t28.296\t1889.4759\tARA\t22:19:20\nbuy\t08/26/2019\t80.187.26.233\tcmo\t23.868\t2071.9426\tFSZ\t12:30:10\nsell\t08/08/2019\t128.182.67.235\tquote\t24.215\t1040.1763\tTCI\t1:16:05\nbuy\t08/15/2019\t223.16.208.119\tbestLimit\t27.9896\t3090.4398\tSYNL\t1:52:59\nsell\t08/02/2019\t66.74.141.162\tcmo\t22.8888\t1778.6136\tWHLRD\t12:05:49\nsell\t08/04/2019\t66.217.38.219\tlimit\t42.588\t2929.6176\tCHK\t21:27:27\nsell\t08/10/2019\t20.196.108.226\tquote\t30.7125\t2749.572\tAAV\t17:15:00\nbuy\t08/21/2019\t254.3.239.71\tbatch\t30.1928\t2275.494\tCSV\t23:34:32\nnull\t08/24/2019\t47.97.205.185\tquote\t19.8591\t1523.3834\tDPG\t23:44:46\nsell\t08/17/2019\t227.220.71.187\tmarket\t17.3875\t2414.8854\tPHK\t0:03:56\nbuy\t08/12/2019\t55.115.226.223\tcmo\t25.5192\t2574.888\tLIVN\t20:36:10\nbuy\t08/18/2019\t65.66.178.77\tlimit\t37.3116\t1887.1612\tBURL\t13:20:22\nbuy\t08/26/2019\t47.185.88.219\tcmo\t17.3715\t2647.6488\tXEC\t6:53:42\nbuy\t08/16/2019\t119.5.219.46\tbatch\t16.9048\t3666.131\tSTKS\t0:49:15\nsell\t08/29/2019\t191.208.205.85\tbestLimit\t17.3706\t1914.4188\tQUMU\t20:32:22\nbuy\t08/05/2019\t60.91.42.232\tmarket\t3.785\t3256.381\tPNC^Q\t16:45:53\nsell\t08/05/2019\t84.62.142.100\tmarket\t12.9628\t727.8465\tTDIV\t10:32:13\nbuy\t08/21/2019\t101.248.190.96\tbatch\t18.5094\t2652.1816\tNSYS\t1:21:36\nsell\t08/10/2019\t236.97.76.191\tcmo\t35.0205\t3057.5468\tWPT\t2:53:24\nsell\t08/30/2019\t215.245.152.25\tcross\t31.3035\t2526.1671\tLEN.B\t19:37:21\nsell\t08/22/2019\t206.114.208.167\tmarket\t27.4068\t172.7965\tBCO\t13:44:42\nsell\t08/09/2019\t46.103.12.234\tmarketToLimit\t29.3167\t100.195\tANW\t17:03:38\nsell\t08/23/2019\t165.150.189.186\tquote\t27.0087\t1671.1409\tHT^D\t1:16:05\nbuy\t08/17/2019\t162.62.37.94\tbatch\t22.0545\t1253.9205\tAVHI\t15:11:45\nbuy\t08/06/2019\t112.230.216.131\tbatch\t16.7384\t86.537\tSNR\t6:15:55\nbuy\t08/17/2019\t29.212.64.18\tbestLimit\t39.2139\t427.3256\tCNS\t1:43:44\nbuy\t08/18/2019\tnull\tbatch\t8.22\tnull\tPSB^W\t21:58:36\nbuy\t08/15/2019\t154.246.29.176\tquote\t13.0725\t1530.912\tAZO\t1:36:50\nbuy\t08/29/2019\t20.167.45.23\tcmo\t3.5825\t2521.9978\tPTXP\t6:22:38\nbuy\t08/09/2019\t98.163.73.33\tbestLimit\t22.7215\t640.2942\tCNMD\t11:06:04\nbuy\t08/06/2019\t162.117.107.205\toco\t29.992\t1311.5163\tOMI\t4:06:37\nbuy\t08/25/2019\t0.167.175.10\tmarketToLimit\t4.335\t2168.3871\tBTEC\t2:40:42\nbuy\t08/23/2019\t106.220.202.123\tmarketToLimit\t10.633\t2429.9486\tNTB\t12:43:39\nbuy\t08/08/2019\t37.106.217.77\tbestLimit\t13.629\t2261.4552\tNPO\t4:15:03\nsell\t08/28/2019\t98.77.85.194\tquote\t8.7975\t2412.6788\tC^S\t21:29:23\nbuy\t08/20/2019\t253.223.126.169\tmarketToLimit\t8.426\t2901.4787\tRAS^A\t12:09:48\nbuy\t08/27/2019\t10.94.255.240\tmarket\t18.3443\t107.682\tCYOU\t20:06:16\nsell\t08/20/2019\t181.88.10.147\tquote\t22.6134\t127.1808\tVLT\t4:17:36\nbuy\t08/06/2019\t130.21.253.235\tcross\t17.928\t3569.8124\tGPT\t15:17:10\nsell\t08/18/2019\t146.95.164.57\toco\t19.7102\t1594.908\tCLAC\t7:49:08\nbuy\t08/20/2019\t27.75.54.178\toco\t23.8326\t1694.3094\tFCCY\t3:27:41\nsell\t08/10/2019\t145.66.127.76\tlimit\t16.59\t1281.9282\tCDR^B\t9:28:37\nbuy\t08/20/2019\t232.19.239.42\toco\t37.1544\t601.2204\tLAKE\t18:51:54\nbuy\t08/11/2019\t46.225.61.131\tcross\t9.3928\t683.0196\tKLIC\t13:19:18\nsell\t08/25/2019\t209.43.109.228\toco\t17.836\t2605.5612\tNOM\t15:28:00\nsell\t08/14/2019\t111.52.38.204\tquote\t17.441\t3795.6538\tBLKB\t22:54:10\nsell\t08/06/2019\t85.149.72.255\tmarketToLimit\t11.0485\t2411.167\tAFSS\t1:24:53\nsell\t08/08/2019\t92.123.15.212\tmarket\t27.9914\t1477.3804\tMSI\t17:38:19\nbuy\t08/18/2019\t13.95.112.135\toco\t12.2661\t3174.2594\tCVCY\t6:09:23\nbuy\t08/28/2019\t167.91.175.167\tbatch\t22.788\t780.1157\tAIY\t12:28:43\nsell\t08/12/2019\t213.147.227.120\tmarket\t24.661\t1102.942\tASR\t19:38:35\nsell\t08/23/2019\t66.128.9.29\tquote\t34.1909\t2360.2408\tUBP^F\t15:25:19\nsell\t08/05/2019\t99.249.107.154\tquote\t8.6058\t107.157\tIOSP\t0:30:39\nsell\t08/12/2019\t109.6.150.88\tlimit\t11.7312\t2412.3136\tUNF\t15:31:10\nsell\t08/18/2019\t0.178.80.112\tbestLimit\t6.3339\t1014.1338\tBBH\t21:31:23\nsell\t08/10/2019\t161.119.40.108\tmarket\t24.7808\t841.1496\tGPRK\t18:51:44\nbuy\t08/25/2019\t246.83.0.51\toco\t13.3569\t1362.2686\tUFPI\t2:23:34\nsell\t08/26/2019\t86.68.13.252\tbatch\t43.134\t2128.6368\tFLC\t9:04:04\nbuy\t08/08/2019\t198.211.153.5\tbatch\t10.0448\t2232.984\tKEYW\t20:25:01\nsell\t08/27/2019\t182.184.22.226\tbatch\t15.4242\t4562.3088\tFSS\t14:13:36\nsell\t08/08/2019\t211.128.112.82\tlimit\t15.7199\t2279.4\tADXS\t7:44:15\nbuy\t08/14/2019\t197.204.179.124\tquote\t4.47\t1716.9592\tHPE\t13:42:21\nsell\t08/16/2019\t128.90.13.192\tmarketToLimit\t38.0562\t2239.8771\tPSDV\t6:17:58\nsell\t08/24/2019\t36.106.194.236\tcross\t4.38\t1273.8341\tFUL\t17:21:55\nbuy\t08/27/2019\t69.207.232.116\tlimit\t30.6332\t2523.1872\tNEE^J\t13:20:52\nsell\t08/19/2019\t186.144.206.133\tlimit\t4.165\t2079.4104\tNEE^R\t6:34:25\nsell\t08/02/2019\t173.36.40.249\tbatch\t11.4\t2818.1417\tHBIO\t4:52:04\nsell\t08/23/2019\t101.44.10.94\tlimit\t26.505\t1995.182\tMEDP\t3:17:28\nsell\t08/13/2019\t82.92.115.100\tlimit\t42.8722\t3609.1352\tSCON\t12:22:05\nsell\t08/08/2019\t232.226.5.219\tlimit\t25.2432\t2646.3194\tNERV\t17:35:56\nsell\t08/08/2019\t75.156.45.3\tbatch\t19.1552\t2053.0944\tLYV\t10:15:32\nnull\t08/26/2019\t96.211.122.181\tbatch\t12.0933\t2821.3323\tFBP\t11:43:04\nsell\t08/20/2019\t40.122.82.245\tcmo\t17.3104\t2633.3712\tAGII\t19:50:22\nbuy\t08/12/2019\t51.213.25.85\tquote\t23.022\t2065.2737\tHK\t13:27:08\nbuy\t08/15/2019\t122.46.243.33\tmarketToLimit\t10.456\t1304.55\tARLP\t10:46:34\nsell\t08/20/2019\t61.81.179.11\tlimit\t8.93\t753.5864\tATRI\t8:13:00\nsell\t08/19/2019\t67.206.13.85\tcross\t21.5327\t3041.829\tPBT\t18:34:59\nbuy\t08/28/2019\t77.5.7.163\tquote\t19.256\t3325.4532\tENLC\t18:31:10\nbuy\t08/13/2019\t7.185.211.177\tbestLimit\t13.9001\t1606.3911\tMEET\t14:55:32\nbuy\t08/08/2019\t139.112.36.55\tcmo\t34.9932\t3867.8094\tBFIN\t4:02:30\nbuy\t08/20/2019\t230.130.250.160\tlimit\t20.429\t1975.2471\tCPAAU\t17:31:07\nsell\t08/03/2019\t253.198.95.204\tbatch\t30.7275\t1679.8718\tLN\t3:34:31\nsell\t08/12/2019\t45.146.145.98\toco\t40.304\t3264.1056\tAOS\t1:13:23\nbuy\t08/20/2019\t249.129.192.83\tbatch\t3.695\t3868.4142\tFRP\t11:11:07\nsell\t08/27/2019\t145.172.99.120\toco\t11.7488\t2648.184\tALJJ\t3:06:43\nsell\t08/27/2019\t244.60.150.177\tcross\t22.906\t1308.7472\tCLNS^F.CL\t2:21:10\nsell\t08/11/2019\t160.24.37.140\tcross\t25.9496\t1292.4131\tRACE\t23:14:07\nsell\t08/29/2019\t243.239.118.29\tmarketToLimit\t3.2725\t2045.0238\tJQC\t16:33:25\nsell\t08/22/2019\t71.231.140.228\tmarketToLimit\t49.467\t1869.6244\tBDGE\t0:25:21\nsell\t08/20/2019\t8.37.241.12\tmarketToLimit\t37.73\t1148.8008\tLAYN\t8:50:23\nsell\t08/07/2019\t106.9.155.20\tlimit\t15.184\t971.3781\tBBT\t7:14:36\nbuy\t08/15/2019\t99.109.16.197\tbatch\t7.227\t3279.04\tBLUE\t15:54:03\nsell\t08/08/2019\t93.194.90.120\tbestLimit\t25.308\t2689.9992\tBRSS\t17:11:33\nsell\t08/23/2019\t103.244.168.159\tcross\t15.7032\t1106.0224\tVAC\t0:47:55\nbuy\t08/27/2019\t99.247.28.177\tquote\t17.1808\t2400.2502\tJCP\t22:58:50\nbuy\t08/23/2019\t56.162.143.169\tbestLimit\t17.743\t2472.8358\tBC\t7:07:50\nbuy\t08/22/2019\t147.236.235.233\tcross\t23.4955\t1530.7545\tNEWTZ\t5:19:34\nsell\t08/20/2019\t119.65.93.224\tquote\t37.297\t3484.7165\tSOJA\t23:19:08\nbuy\t08/06/2019\t186.136.213.238\tcmo\t25.7009\t1231.4655\tKMI\t6:35:00\nbuy\t08/18/2019\t100.239.57.207\toco\t34.4025\t1571.2488\tKURA\t9:58:03\nsell\t08/28/2019\t25.89.0.55\tbestLimit\t32.98\t1164.329\tFDIV\t13:22:29\nsell\t08/30/2019\t85.230.193.231\tquote\t26.866\t3970.3678\tNEWS\t20:24:52\nbuy\t08/15/2019\t11.212.31.95\tquote\t16.936\t2463.784\tRXII\t11:53:54\nbuy\t08/07/2019\t228.239.217.20\tlimit\t6.16\t1562.2122\tJILL\t5:16:27\nsell\t08/10/2019\t114.109.208.246\tlimit\t26.1702\t111.695\tKONE\t23:28:06\nsell\t08/23/2019\t136.5.192.64\tcmo\t16.488\t2252.901\tBSBR\t23:10:37\nbuy\t08/22/2019\t236.250.86.134\tbestLimit\t36.8552\t2875.479\tBLL\t2:19:49\nsell\t08/21/2019\t187.190.182.187\toco\t9.6128\t3239.8652\tNWSA\t16:26:44\nbuy\t08/09/2019\t148.163.61.186\tmarketToLimit\t25.6888\t1834.2016\tBIO\t23:01:01\nbuy\t08/18/2019\t145.5.18.245\tbatch\t17.1644\t2927.1132\tMGA\t20:57:10\nsell\t08/17/2019\t4.191.180.103\toco\t36.5295\t3068.043\tDEA\t14:16:21\nsell\t08/01/2019\t2.255.10.39\tbestLimit\t21.45\t2665.2972\tTNP^C\t2:33:31\nbuy\t08/29/2019\t90.57.159.125\tbatch\t50.5078\t1543.0688\tETM\t4:17:07\nsell\t08/22/2019\t85.150.90.117\tcmo\t13.9806\t4551.7764\tTRC\t19:00:50\nsell\t08/04/2019\t17.106.161.71\tcmo\t22.1025\t2210.2348\tREXR^A\t3:46:03\nbuy\t08/19/2019\t251.214.207.159\tmarket\t17.3622\t1622.1912\tBSM\t18:49:23\nsell\t08/06/2019\t108.114.65.9\tbestLimit\t20.9677\t2309.7312\tWMS\t7:01:32\nsell\t08/20/2019\t160.29.40.122\tcmo\t21.7671\t2707.4439\tCBPX\t4:16:37\nbuy\t08/04/2019\t64.25.154.222\tlimit\t10.7584\t95.372\tWING\t23:22:32\nbuy\t08/08/2019\t134.243.224.125\tcmo\t7.9\t3519.2487\tBECN\t23:44:47\nbuy\t08/15/2019\tnull\toco\t35.6131\tnull\tSOXX\t17:40:49\nbuy\t08/22/2019\t227.144.4.171\tquote\t28.1002\t3212.3212\tRDVY\t18:18:03\nsell\t08/21/2019\t156.187.236.225\tbatch\t14.8516\t3165.6471\tEXP\t13:37:34\nbuy\t08/27/2019\t145.76.235.85\toco\t9.3612\t2635.5015\tCCUR\t21:24:24\nbuy\t08/16/2019\t167.195.18.50\tmarketToLimit\t27.285\t1637.9874\tDSLV\t14:24:00\nsell\t08/16/2019\t76.218.65.50\tmarketToLimit\t25.6802\t2613.6804\tSHSP\t2:05:26\nbuy\t08/24/2019\t155.148.162.51\tquote\t13.9854\t928.1365\tGFNCP\t16:18:15\nsell\t08/19/2019\t158.203.124.81\tbatch\t14.8975\t924.701\tEVC\t20:12:24\nbuy\t08/25/2019\t248.68.80.21\tlimit\t27.2544\t2601.558\tPCTY\t17:40:34\nsell\t08/12/2019\t174.10.236.170\tbestLimit\t18.9222\t2768.1764\tGABC\t2:29:19\nbuy\t08/01/2019\t233.163.87.187\toco\t14.8132\t1127.6265\tTBI\t23:51:56\nbuy\t08/04/2019\t180.173.133.173\tcross\t20.0075\t2186.12\tRARE\t19:11:11\nsell\t08/14/2019\t221.79.5.28\tmarket\t3.9375\t2189.2788\tRNST\t18:30:36\nbuy\t08/23/2019\t13.58.102.74\toco\t33.9592\t2963.7234\tSHOP\t11:39:47\nsell\t08/15/2019\t177.239.101.62\tbestLimit\t33.9892\t1608.9732\tCUI\t17:33:20\nsell\t08/23/2019\t215.213.155.204\tmarketToLimit\t29.6476\t2258.8865\tEME\t8:26:54\nsell\t08/12/2019\t220.93.59.116\toco\tnull\t2271.6575\tCLACW\t9:34:38\nbuy\t08/24/2019\t83.27.80.167\tcross\t28.2564\t353.54\tAGZD\t7:32:12\nsell\t08/06/2019\t197.242.85.87\tcmo\t15.6429\t1447.9064\tFCBC\t10:34:53\nsell\t08/08/2019\t3.26.179.158\tlimit\t19.7035\t984.5784\tMON\t21:36:07\nsell\t08/22/2019\t97.209.28.162\tcross\t6.6411\t2481.143\tSTO\t4:20:35\nsell\t08/21/2019\t226.146.252.0\toco\t7.7168\t925.992\tCASS\t16:12:15\nsell\t08/02/2019\t202.152.121.206\tcross\t17.5763\t2204.4424\tBBDO\t0:25:41\nsell\t08/12/2019\t228.233.57.72\tmarket\t19.89\t1419.479\tAYR\t7:17:47\nbuy\t08/03/2019\t213.208.20.14\tbatch\t17.3031\t1209.2938\tFRAN\t1:03:17\nbuy\t08/14/2019\t222.200.114.1\tcross\t6.0705\t1280.2599\tVSTO\t14:06:46\nsell\t08/03/2019\t4.122.116.126\tmarketToLimit\t42.9286\t2409.6747\tFYX\t18:43:38\nbuy\t08/26/2019\t174.217.129.103\tcross\t14.4441\t2940.6371\tPTX\t20:20:09\nsell\t08/03/2019\t242.131.94.70\tcross\t4.045\t1422.9054\tMPB\t18:32:21\nbuy\t08/16/2019\t116.42.183.108\tmarketToLimit\t24.6782\t1562.3344\tWAAS\t3:34:29\nbuy\t08/19/2019\t90.23.35.206\tquote\t8.154\t1458.6077\tSSFN\t7:09:13\nsell\t08/02/2019\t155.172.7.230\toco\t28.4451\t2703.3713\tPRFZ\t10:38:31\nsell\t08/11/2019\t162.184.187.8\tbatch\t21.0158\t2779.5778\tKFFB\t2:50:12\nsell\t08/28/2019\t167.66.141.40\tquote\t17.9452\t1038.9276\tPPG\t1:16:18\nbuy\t08/10/2019\t25.81.240.169\tcross\t29.1462\t1241.5476\tVMO\t16:02:33\nnull\t08/08/2019\t239.78.30.234\toco\t19.0744\t3059.4237\tSTLRU\t19:20:34\nsell\t08/15/2019\t235.108.165.38\tcmo\t26.2364\t2171.1375\tPRCP\t7:45:48\nsell\t08/20/2019\t213.240.251.46\tquote\t23.166\t98.54\tCRNT\t23:40:03\nnull\t08/27/2019\t142.121.147.38\tmarket\t27.4365\t1740.0528\tCGNT\t10:25:27\nbuy\t08/09/2019\t230.195.161.183\tquote\t6.8712\t1502.6894\tDQ\t19:19:16\nbuy\t08/09/2019\t205.252.142.207\tquote\t15.425\t2152.8881\tTRQ\t12:39:27\nsell\t08/15/2019\t134.131.60.86\tcmo\t29.0928\t1261.5808\tSB\t10:01:53\nsell\t08/24/2019\t224.97.139.100\tcmo\t28.5196\t1957.6224\tFKU\t0:21:52\nbuy\t08/05/2019\t100.177.113.70\toco\t15.3797\t1969.6014\tMWA\t18:15:12\nsell\t08/05/2019\t163.95.144.148\tmarketToLimit\t33.6375\t823.608\tDSW\t5:02:23\nbuy\t08/12/2019\t149.188.37.40\tcross\t20.2958\t2202.963\tTLLP\t12:41:07\nsell\t08/27/2019\t67.166.227.37\tmarket\t27.777\t2608.9455\tCCRC\t16:59:43\nbuy\t08/27/2019\t164.152.71.76\tbatch\t17.329\t1331.0972\tPML\t23:31:46\nbuy\t08/19/2019\t248.101.90.44\tmarket\t36.2576\t1658.5734\tMXWL\t18:29:21\nbuy\t08/16/2019\t94.24.179.0\tcross\t16.3332\t2625.9746\tMDIV\t20:19:51\nsell\t08/27/2019\t151.184.206.132\tbestLimit\t36.2578\t1416.1686\tJCOM\t4:10:34\nbuy\t08/24/2019\t117.70.87.5\tquote\t26.529\t671.16\tNTZ\t10:04:15\nbuy\t08/15/2019\t199.108.91.20\tmarket\t4.1275\t2787.1828\tMOS\t19:47:22\nsell\t08/11/2019\t190.158.83.183\toco\t17.7408\t1525.3956\tPAGP\t11:27:48\nbuy\t08/23/2019\t42.78.152.140\toco\t20.474\t1105.776\tCBFV\t18:03:00\nbuy\t08/02/2019\t147.155.210.174\tmarket\t8.9544\t2526.8382\tSLQD\t4:41:34\nsell\t08/02/2019\t8.4.185.80\tcross\t32.1078\t2800.98\tSYRS\t13:47:01\nbuy\t08/07/2019\t29.32.34.80\tcmo\t10.1317\t1668.144\tGCP\t5:05:53\nbuy\t08/20/2019\t49.171.148.111\tbestLimit\t18.3261\t1777.4724\tCSWC\t7:29:03\nsell\t08/28/2019\t111.8.46.94\tmarketToLimit\t11.0428\t104.828\tAHL^B.CL\t15:50:10\nsell\t08/07/2019\t210.222.162.54\tmarketToLimit\t13.2405\t2735.0184\tHPI\t0:06:50\nsell\t08/12/2019\t85.48.180.181\toco\t34.1661\t1899.1083\tOPXAW\t23:19:38\nbuy\t08/17/2019\t243.121.210.9\tbatch\t28.4919\t810.425\tNVR\t8:29:10\nbuy\t08/18/2019\t195.198.58.7\tbatch\t11.2038\t1798.502\tLLNW\t7:59:09\nbuy\t08/18/2019\t76.70.250.198\tmarket\t18.876\t3052.441\tZBH\t9:21:52\nsell\t08/12/2019\t72.132.172.14\toco\t3.6175\t2954.7924\tQYLD\t6:38:46\nbuy\t08/21/2019\t247.18.38.102\tcmo\t20.544\t1730.4404\tIMKTA\t8:37:02\nbuy\t08/14/2019\t118.218.125.16\tbatch\t3.7975\t1912.2285\tHCC\t22:46:10\nsell\t08/21/2019\t170.101.13.152\tquote\t12.0\t2242.0464\tSTRT\t14:31:22\nsell\t08/01/2019\t90.133.74.123\tmarket\t10.9593\t2117.3616\tDVCR\t5:48:59\nsell\t08/21/2019\t66.142.60.238\tbestLimit\t10.2746\t3319.3992\tJCP\t18:06:00\nbuy\t08/04/2019\t49.41.200.59\tcross\t21.7404\t807.782\tEVLMC\t11:06:59\nsell\t08/28/2019\t63.214.18.141\tcmo\t19.9136\t3186.6034\tSID\t23:03:08\nsell\t08/20/2019\t232.122.142.212\tbestLimit\t23.9904\t2932.4475\tCAJ\t21:30:00\nsell\t08/15/2019\t178.127.107.34\toco\t24.5106\t491.181\tXLNX\t14:31:41\nbuy\t08/25/2019\t243.118.160.168\tcross\t40.6556\t1087.8243\tBLCM\t21:51:29\nbuy\t08/19/2019\t72.187.206.59\tmarket\t33.652\t938.8605\tPTCT\t9:17:15\nsell\t08/06/2019\t212.79.142.246\tbestLimit\t30.1596\t833.184\tCDR\t5:22:06\nbuy\t08/12/2019\t36.184.233.229\tmarketToLimit\t19.5402\t2116.106\tAPLP\t18:59:17\nsell\t08/26/2019\t28.173.191.42\tmarket\t3.1225\t95.581\tPRIM\t20:01:02\nsell\t08/03/2019\t154.81.196.128\tbestLimit\t31.4814\t2881.109\tGMRE\t6:56:54\nbuy\t08/09/2019\t132.79.22.145\tbatch\t23.0\t3616.1244\tVONV\t7:24:09\nsell\t08/24/2019\t85.193.47.188\toco\t3.4825\t5027.3286\tSTZ.B\t3:33:56\nsell\t08/25/2019\t113.58.145.152\tquote\t13.3796\t2290.962\tVYMI\t3:38:49\nsell\t08/01/2019\t178.245.17.7\toco\t6.7744\t522.2322\tPTHN\t23:09:24\nbuy\t08/01/2019\t3.223.216.92\tcross\t8.8264\t3739.05\tRPD\t7:31:41\nbuy\t08/30/2019\t233.31.172.82\toco\t38.8885\t2629.8909\tHMC\t9:12:57\nbuy\t08/01/2019\t187.17.105.231\toco\t23.868\t2473.2162\tPDFS\t3:45:36\nsell\t08/04/2019\t155.32.38.150\tbatch\t28.5795\t2234.736\tCHFS\t9:50:08\nsell\t08/20/2019\t194.91.16.94\tbatch\t24.2218\t878.1386\tQADB\t7:25:02\nsell\t08/03/2019\t254.163.76.71\tmarket\t12.028\t2710.9152\tTA\t9:38:33\nbuy\t08/23/2019\t30.129.212.129\toco\t28.0558\t1408.8546\tJDD\t12:40:32\nbuy\t08/16/2019\t113.147.34.207\tlimit\t9.6064\t2402.1453\tTSEM\t14:33:20\nbuy\t08/15/2019\t69.22.227.26\tlimit\t22.232\t3586.197\tWTI\t4:04:30\nsell\t08/07/2019\t132.210.203.202\tcmo\t24.2176\t2602.9446\tRRR\t4:27:31\nbuy\t08/23/2019\t21.195.163.169\tbestLimit\t3.89\t2488.4134\tAPLP\t20:29:37\nbuy\t08/05/2019\t114.0.205.215\tmarketToLimit\t32.472\t2124.4938\tGME\t14:11:37\nbuy\t08/05/2019\t46.238.65.172\tmarket\t29.2492\t3079.168\tF\t11:07:29\nsell\t08/08/2019\t158.57.14.96\toco\t3.5725\t713.6187\tLOB\t15:03:10\nbuy\t08/23/2019\t92.89.22.212\tquote\t26.385\t1419.5692\tTREE\t6:16:57\nsell\t08/10/2019\t159.180.182.126\tmarket\t20.202\t2799.8866\tERIC\t14:07:28\nbuy\t08/12/2019\t204.93.64.88\tmarket\t20.2788\t3752.4399\tAMH^A\t13:04:22\nbuy\t08/05/2019\t168.39.115.44\tquote\t21.5577\t1878.9348\tYELP\t10:35:09\nnull\t08/18/2019\t31.112.10.179\tcmo\t22.7906\t4067.136\tETV\t13:09:39\nbuy\t08/14/2019\t233.113.173.70\tbestLimit\t33.2416\t2548.377\tDFRG\t6:01:46\nsell\t08/17/2019\t113.131.156.123\toco\t6.56\t91.763\tQCRH\t8:13:45\nbuy\t08/06/2019\tnull\tbatch\t37.3219\tnull\tNYV\t22:55:57\nnull\t08/14/2019\t195.228.74.39\tmarket\t23.9895\t996.35\tFMK\t17:03:27\nsell\t08/30/2019\t43.52.250.138\tcmo\t4.8024\t1505.5904\tCHGG\t17:39:55\nbuy\t08/14/2019\t169.112.119.212\tquote\t31.6404\t1375.8773\tDYNT\t4:24:25\nnull\t08/16/2019\t11.15.130.83\tbatch\t17.272\t1478.3615\tPKG\t18:58:05\nbuy\t08/02/2019\t81.193.100.220\tlimit\t37.41\t1926.8043\tCOH\t12:49:23\nsell\t08/14/2019\t27.114.101.219\tmarketToLimit\t29.072\t1171.7872\tNEV\t17:07:49\nsell\t08/25/2019\t201.44.230.252\tmarketToLimit\t31.8666\t3592.3225\tCTMX\t20:50:06\nbuy\t08/08/2019\t110.241.252.226\tmarket\t27.0216\t770.0462\tETSY\t6:45:20\nnull\t08/07/2019\t174.237.58.103\tcmo\t34.5\t902.757\tNQP\t6:18:56\nsell\t08/08/2019\t206.172.38.230\toco\t26.8632\t1143.978\tPRIM\t8:35:26\nsell\t08/21/2019\tnull\tlimit\t4.7675\tnull\tPSB^U\t2:11:56\nbuy\t08/10/2019\t94.57.201.123\tcross\t10.9032\t2165.7595\tATLC\t2:24:41\nbuy\t08/26/2019\t64.135.229.192\tbatch\t26.0884\t543.6444\tUBOH\t6:44:02\nsell\t08/19/2019\t94.14.31.136\tmarket\t19.6596\t2067.1464\tTPGE.U\t16:02:32\nbuy\t08/22/2019\t94.131.26.206\tquote\t20.7348\t100.11\tNSA\t21:57:53\nsell\t08/26/2019\t242.2.138.230\tmarket\t32.136\t2984.9787\tAVP\t3:51:53\nsell\t08/05/2019\t224.39.44.234\tmarket\t20.5348\t3144.8298\tFII\t1:01:40\nbuy\t08/11/2019\t148.152.183.237\tbestLimit\t5.0869\t3052.0497\tHYZD\t20:07:54\nbuy\t08/15/2019\t242.166.54.103\tcross\t22.6527\t3526.3072\tYGE\t11:38:45\nbuy\t08/10/2019\t176.170.119.229\toco\t24.985\t2182.3569\tNQP\t13:06:11\nsell\t08/06/2019\t221.47.121.105\tquote\t28.0308\t1986.831\tAMSF\t17:52:14\nbuy\t08/25/2019\tnull\tcmo\t11.219\tnull\tXIN\t3:06:29\nsell\t08/20/2019\t26.94.180.107\tlimit\t20.5558\t2923.7\tBRCD\t3:43:46\nsell\t08/22/2019\t17.168.13.127\tquote\t17.72\t2111.7771\tGNMK\t15:32:09\nsell\t08/29/2019\t102.139.92.184\tquote\t4.34\t2972.475\tBOTZ\t14:41:40\nsell\t08/03/2019\t155.59.124.69\tquote\t26.5136\t4344.732\tTATT\t13:44:10\nbuy\t08/29/2019\t161.193.238.23\tbatch\t33.319\t1458.8637\tSHBI\t11:47:40\nbuy\t08/15/2019\t41.136.154.43\tcross\t23.188\t1424.4447\tRNR\t11:07:43\nbuy\t08/02/2019\t170.203.233.24\tlimit\t37.2476\t2593.7736\tUSA\t17:04:56\nbuy\t08/07/2019\t87.54.199.114\tquote\t26.772\t653.1138\tDLNG^A\t10:09:10\nsell\t08/11/2019\t66.213.97.89\tbatch\t17.575\t1174.635\tVEACU\t4:08:59\nsell\t08/04/2019\t157.27.199.167\tquote\t9.5205\t2202.1226\tHTBK\t8:01:42\nbuy\t08/23/2019\t92.52.168.45\tlimit\t4.29\t3026.9856\tARDC\t17:03:28\nbuy\t08/15/2019\t213.234.27.37\tbatch\t24.256\t1005.074\tJOBS\t15:20:32\nsell\t08/26/2019\t13.5.46.37\tlimit\t8.0323\t1788.112\tPER\t0:31:16\nbuy\t08/28/2019\t51.84.164.99\tlimit\t20.8772\t2817.6046\tECL\t22:58:03\nsell\t08/01/2019\t209.49.60.199\tquote\t24.0053\t1559.2176\tENSG\t5:05:51\nsell\t08/26/2019\t238.208.57.163\tbestLimit\t36.6336\t4277.5077\tEWZS\t1:04:03\nsell\t08/25/2019\t105.113.87.19\tquote\t11.9544\t3383.688\tMED\t11:59:10\nbuy\t08/26/2019\t94.172.91.109\tmarketToLimit\t10.9902\t110.551\tHRL\t13:08:55\nbuy\t08/03/2019\t234.67.31.24\tcmo\tnull\t3423.1542\tNATR\t3:59:04\nsell\t08/16/2019\t45.202.237.49\tcmo\t15.525\t1867.089\tCCUR\t20:39:06\nbuy\t08/08/2019\t230.203.182.171\tmarket\t26.1936\t2805.408\tAMZN\t17:19:08\nbuy\t08/02/2019\t218.70.243.139\tmarketToLimit\t13.69\t1536.6237\tPVH\t18:28:52\nsell\t08/12/2019\t186.210.227.80\tbestLimit\t3.985\t2476.4463\tDS\t17:18:25\nbuy\t08/01/2019\t48.17.220.169\tmarket\t20.3847\t277.8192\tHCOM\t7:57:47\nbuy\t08/07/2019\t247.99.160.216\tbatch\t17.4876\t1005.2329\tFMCI\t9:58:04\nsell\t08/24/2019\t123.62.228.4\tbatch\t35.8545\t2425.7752\tSDR\t10:48:36\nbuy\t08/29/2019\t21.151.228.118\tmarket\t39.075\t1248.624\tUSB^M\t10:27:39\nsell\t08/30/2019\t189.0.199.39\tcmo\t18.6776\t4390.7216\tSERV\t19:51:29\nbuy\t08/25/2019\t32.201.41.64\tcross\t23.236\t4625.9136\tAC\t18:39:31\nsell\t08/03/2019\t239.21.168.222\tbatch\t34.9872\t1826.4529\tVSAR\t1:13:47\nbuy\t08/08/2019\t179.28.16.9\tlimit\t17.1504\t1667.535\tPNW\t6:26:15\nbuy\t08/15/2019\t124.14.193.247\toco\t11.4444\t2132.7477\tQTS\t14:02:08\nbuy\t08/17/2019\t166.178.107.78\tmarket\t15.759\t880.6089\tSIEB\t14:43:14\nbuy\t08/07/2019\t143.69.14.190\tbatch\t19.0365\t1250.9289\tFTRI\t23:23:21\nsell\t08/24/2019\t243.46.113.207\toco\t32.929\t2892.112\tCBAY\t1:24:34\nsell\t08/08/2019\t45.209.24.100\tcmo\t34.18\t1615.6672\tVVR\t5:39:25\nsell\t08/21/2019\t165.123.147.232\tmarket\t12.6116\t1475.2112\tFFIV\t4:52:45\nsell\t08/12/2019\t81.149.119.70\tlimit\t20.9625\t2457.2966\tPSMT\t20:20:27\nsell\t08/20/2019\t234.182.56.240\tquote\t29.9934\t3250.3221\tUSB^O\t0:39:33\nbuy\t08/21/2019\t243.55.233.254\tmarket\t22.737\t902.7893\tCAR\t8:20:40\nsell\t08/26/2019\tnull\tmarketToLimit\t15.9936\tnull\tFTS\t12:46:42\nbuy\t08/01/2019\t13.239.180.31\tquote\t3.695\t2145.0256\tCMCM\t15:59:57\nbuy\t08/06/2019\t152.239.32.250\tmarket\t17.256\t1389.9734\tCCZ\t15:01:49\nsell\t08/22/2019\t226.164.189.28\tbatch\t21.3032\t1744.2828\tCYS\t15:27:22\nsell\t08/09/2019\t172.63.90.161\tcmo\t17.2163\t1855.2869\tIVFVC\t14:17:04\nsell\t08/15/2019\t160.81.23.239\tcross\t24.656\t2823.9324\tRUN\t17:30:52\nbuy\t08/27/2019\t95.18.237.160\tbestLimit\t28.3105\t1880.5024\tAEG\t10:00:36\nsell\t08/14/2019\t219.16.31.37\tbatch\t46.2245\t3017.915\tADI\t13:34:09\nbuy\t08/26/2019\t10.155.120.30\tmarket\t11.5368\t4438.819\tWBA\t13:21:39\nbuy\t08/03/2019\t73.124.14.184\tquote\t31.5018\t2705.2398\tWFC^W\t15:24:16\nsell\t08/23/2019\t153.211.131.7\tmarketToLimit\t50.1309\t1338.597\tTUES\t7:41:25\nsell\t08/04/2019\t170.246.38.92\tmarketToLimit\t8.2188\t2634.7146\tXIV\t8:11:12\nbuy\t08/08/2019\t92.50.60.155\tquote\t32.6196\t2057.4225\tLLIT\t7:57:42\nbuy\t08/29/2019\t127.131.6.137\tlimit\t28.3554\t3653.9521\tICE\t21:37:16\nbuy\t08/14/2019\t114.163.63.70\tquote\t35.599\t2120.136\tMRLN\t13:22:16\nbuy\t08/22/2019\t94.250.124.127\tcmo\t19.9396\t3295.5992\tALCO\t22:16:20\nbuy\t08/15/2019\t107.169.32.91\tbestLimit\t16.8885\t1826.5312\tEW\t13:40:03\nsell\t08/04/2019\t139.34.27.179\tcmo\t23.088\t3298.8681\tWG\t13:40:06\nbuy\t08/16/2019\t42.48.45.217\tquote\t13.05\t2573.1468\tFYC\t15:49:31\nsell\t08/11/2019\t196.86.51.5\tlimit\t16.64\t3903.9364\tINVE\t7:44:48\nsell\t08/17/2019\t240.26.251.120\tlimit\t22.8566\t565.32\tCIVB\t6:10:27\nbuy\t08/11/2019\t180.99.102.123\tquote\t35.3118\t1788.0499\tCBG\t8:58:01\nbuy\t08/16/2019\t54.17.77.7\tlimit\t27.233\t1123.06\tMARK\t21:42:30\nbuy\t08/23/2019\t239.224.122.113\tquote\t33.3123\t2254.8015\tGWRS\t2:59:02\nbuy\t08/16/2019\t82.62.69.85\tmarket\t16.0524\t2587.1238\tPSAU\t23:46:52\nsell\t08/28/2019\t67.135.54.162\tcmo\t27.3066\t1422.946\tVRA\t20:53:00\nbuy\t08/17/2019\t205.104.130.162\toco\t9.6111\t2615.6558\tSBCF\t4:23:22\nbuy\t08/14/2019\t255.133.243.245\tmarket\t11.8465\t2329.9191\tFHCO\t19:56:51\nbuy\t08/15/2019\t141.34.83.197\tcross\t24.253\t103.839\tASCMA\t16:04:28\nsell\t08/25/2019\t160.47.85.101\tmarket\t14.4724\t1288.7819\tSOV^C\t19:29:38\nsell\t08/16/2019\t15.114.167.185\tquote\t27.261\t1886.9116\tANH\t9:44:18\nsell\t08/03/2019\t253.21.75.120\tlimit\t33.0245\t1943.9604\tNWSA\t11:28:35\nbuy\t08/25/2019\t242.41.114.223\tmarket\t20.6195\t1661.808\tYTRA\t14:42:03\nsell\t08/25/2019\t241.231.11.29\tbestLimit\t34.5992\t3368.89\tEGL\t14:20:56\nbuy\t08/02/2019\t106.72.15.122\tbestLimit\t29.9026\t1864.726\tPPHMP\t20:55:32\nsell\t08/18/2019\t163.206.173.18\tcross\t23.1442\t2301.306\tPBNC\t21:15:52\nsell\t08/21/2019\t217.179.159.91\tlimit\t9.842\t1772.6727\tLII\t19:41:35\nsell\t08/18/2019\t132.41.153.125\tbestLimit\t31.7178\t2195.0124\tLUV\t19:41:34\nbuy\t08/06/2019\t65.209.38.212\tlimit\t20.0803\t203.1383\tSSTK\t23:40:59\nbuy\t08/18/2019\t241.224.137.103\tlimit\t30.8028\t1657.74\tCBMX\t0:52:39\nbuy\t08/08/2019\tnull\tquote\t22.4409\tnull\tCHUY\t12:47:26\nbuy\t08/12/2019\t82.139.159.67\tmarket\t4.3225\t1775.255\tCBIO\t13:20:14\nbuy\t08/25/2019\t40.239.158.68\tlimit\t17.8992\t1833.8685\tADM\t20:18:27\nsell\t08/25/2019\t194.34.153.240\tcmo\t34.3044\t3990.0135\tALLT\t17:51:01\nbuy\t08/13/2019\t164.163.177.52\tcmo\t42.237\t1989.6716\tRZA\t9:07:04\nsell\t08/04/2019\t167.14.127.68\tquote\t24.3754\t1729.1505\tVKTX\t21:23:37\nsell\t08/22/2019\t77.64.51.115\tlimit\t26.4825\t108.587\tRCON\t0:14:04\nbuy\t08/07/2019\t233.238.176.189\toco\t23.1363\t1168.2349\tSIFI\t21:30:53\nsell\t08/09/2019\t189.72.77.98\tmarketToLimit\t11.1588\t102.709\tADAP\t11:24:57\nsell\t08/11/2019\t49.109.26.161\tcross\t25.0346\t2226.907\tFRTA\t7:46:28\nsell\t08/01/2019\t100.185.3.26\toco\t21.3598\t1486.8263\tVRNS\t20:48:37\nsell\t08/16/2019\t112.68.17.194\tlimit\t8.8767\t2259.2752\tBIO.B\t6:32:43\nsell\t08/06/2019\t77.72.247.106\tcmo\t30.954\t3558.3295\tMTZ\t12:04:50\nsell\t08/27/2019\t223.93.112.53\tquote\t5.8599\t1156.4125\tHUNTW\t22:53:07\nbuy\t08/13/2019\t228.185.96.140\tcross\t26.7306\t2884.9976\tISM\t18:14:16\nsell\t08/10/2019\t123.232.196.121\tcmo\t22.0094\t2000.5704\tNUE\t19:15:41\nbuy\t08/22/2019\t4.78.121.248\tcross\t36.765\t3348.6194\tBCOR\t16:35:53\nsell\t08/09/2019\t96.69.78.55\tcmo\t21.2769\t1917.2496\tPKO\t18:57:34\nbuy\t08/30/2019\t69.92.87.116\tlimit\t15.5134\t2836.0473\tSHSP\t9:53:27\nsell\t08/27/2019\t132.150.214.25\tquote\t13.689\t1342.575\tNORD\t13:18:38\nbuy\t08/15/2019\t14.109.56.136\tmarketToLimit\t36.348\t1318.8896\tPSA^D\t18:54:00\nbuy\t08/05/2019\t173.177.222.242\tbatch\t3.83\t2461.482\tLII\t6:47:55\nnull\t08/30/2019\t246.34.160.103\tlimit\t16.5528\t487.8632\tBV\t19:04:18\nsell\t08/25/2019\t124.62.63.31\tbatch\t5.9311\t495.5865\tRLOG\t5:34:27\nbuy\t08/25/2019\t221.133.171.242\tlimit\t24.495\t3051.8848\tGAB\t13:04:19\nsell\t08/19/2019\t55.225.99.39\toco\t25.5255\t2836.5435\tWYNN\t23:19:44\nbuy\t08/11/2019\t88.186.245.232\tbatch\t12.3255\t2505.5701\tLORL\t21:15:17\nsell\t08/08/2019\t165.176.211.167\tcmo\t19.8792\t922.04\tAMRB\t18:24:31\nsell\t08/15/2019\t81.33.255.33\tbatch\t23.775\t1962.6176\tNIM\t4:26:05\nsell\t08/23/2019\tnull\tmarket\t18.2856\tnull\tGFI\t11:38:55\nbuy\t08/24/2019\t61.104.237.221\tcmo\t32.1045\t1220.3008\tISHG\t6:42:45\nsell\t08/17/2019\t108.245.215.127\tcmo\t11.4816\t3084.038\tEPAM\t13:44:32\nsell\t08/29/2019\t37.215.110.141\tbatch\t30.2785\t2490.3936\tETJ\t10:36:36\nsell\t08/24/2019\t172.192.176.179\tcmo\t25.0134\t423.7798\tMOG.B\t21:55:50\nsell\t08/19/2019\t147.247.11.211\tmarket\t19.2654\t1904.4471\tACC\t19:53:42\nbuy\t08/04/2019\t69.246.35.72\tmarket\t14.4681\t3207.567\tBZUN\t5:20:57\nsell\t08/03/2019\t151.129.84.174\tmarket\t2.7725\t2270.6306\tARA\t15:45:25\nsell\t08/10/2019\t167.186.231.9\tcross\t35.0436\t1003.5722\tACET\t22:41:50\nnull\t08/29/2019\t33.247.86.17\tbatch\t7.584\t1376.3874\tLMFA\t2:13:11\nbuy\t08/09/2019\t68.100.64.245\tbatch\t26.235\t2870.975\tCLLS\t9:00:40\nsell\t08/11/2019\t44.65.9.103\tmarket\t34.2583\t2901.7846\tDUK\t17:33:04\nsell\t08/28/2019\t180.101.98.157\tbatch\t18.031\t2076.8172\tAIC\t3:48:34\nsell\t08/20/2019\t242.180.48.123\tcmo\t44.3088\t4044.7872\tIFEU\t7:09:05\nsell\t08/07/2019\t56.150.183.241\tquote\t33.175\t2685.0384\tSDT\t5:44:08\nsell\t08/09/2019\t236.63.212.28\tlimit\t25.727\t1968.208\tAGNCB\t4:27:49\nsell\t08/08/2019\t74.135.214.234\tcmo\t24.1482\t4091.6158\tPODD\t15:36:41\nbuy\t08/21/2019\t0.43.249.196\tbestLimit\t26.8884\t1723.662\tAKR\t3:04:20\nsell\t08/22/2019\t37.26.151.172\toco\t14.2779\t3045.7238\tWDC\t23:43:40\nbuy\t08/19/2019\t107.64.98.26\tbatch\t23.6808\t1371.832\tPSB^U\t6:35:53\nsell\t08/04/2019\t72.92.54.15\tbestLimit\t21.28\t1552.335\tIRM\t17:01:03\nsell\t08/21/2019\tnull\tlimit\t19.3971\tnull\tSO\t20:08:23\nbuy\t08/14/2019\t169.138.60.14\tbestLimit\t5.7477\t546.3336\tKSM\t20:29:11\nbuy\t08/16/2019\t163.230.240.114\tmarket\t55.6094\t882.672\tFTFT\t19:26:00\nbuy\t08/19/2019\t86.224.132.134\tlimit\t39.6396\t1283.4874\tVER\t6:58:44\nbuy\t08/19/2019\t141.231.126.251\tmarketToLimit\t8.9838\t1327.623\tDCI\t18:55:31\nbuy\t08/07/2019\t70.40.234.254\toco\t4.065\t2146.1576\tNYLD\t1:05:08\nsell\t08/12/2019\t55.171.147.154\toco\t25.4928\t2534.9961\tHRTX\t11:10:29\nsell\t08/30/2019\t58.247.170.191\tcmo\t26.019\t2345.4152\tESIO\t19:28:01\nsell\t08/21/2019\t24.224.105.85\tquote\t36.2505\t1940.4687\tSTN\t11:15:23\nbuy\t08/30/2019\t36.8.105.232\toco\t21.8744\t1592.6916\tPOL\t15:18:17\nbuy\t08/11/2019\t207.247.156.230\tbestLimit\t14.0292\t1892.8308\tCIG\t5:58:58\nsell\t08/24/2019\t253.179.186.47\toco\t19.604\t1984.0524\tCLF\t16:41:19\nbuy\t08/05/2019\t53.175.247.40\tlimit\t16.2968\t2029.1557\tCINF\t14:58:55\nsell\t08/30/2019\t6.87.20.23\tcmo\t23.3415\t913.1628\tDGX\t23:35:43\nbuy\t08/10/2019\t218.207.133.205\tquote\t9.6975\t1153.9068\tEVSTC\t6:51:41\nsell\t08/03/2019\t18.10.142.16\tcross\t3.8338\t3027.6988\tESPR\t13:31:07\nsell\t08/11/2019\t63.95.75.26\tcmo\t14.4855\t3427.712\tFPRX\t19:05:35\nsell\t08/28/2019\t222.98.202.244\tcmo\t27.774\t88.684\tMKL\t10:18:21\nsell\t08/13/2019\t4.59.207.233\tbestLimit\t7.0782\t999.9506\tMLNK\t12:07:26\nsell\t08/10/2019\t101.38.246.31\tbestLimit\t26.9516\t375.908\tJNCE\t0:17:44\nbuy\t08/24/2019\t180.36.22.165\tmarket\t3.7825\t1572.1298\tAFSI^A\t22:26:47\nbuy\t08/22/2019\t106.90.108.54\tbestLimit\t26.8349\t2839.3092\tHBANO\t10:33:55\nsell\t08/26/2019\t229.174.223.191\tbestLimit\t4.1475\t4126.3227\tNYNY\t19:52:40\nbuy\t08/16/2019\t233.252.182.63\tbatch\t35.1596\t1059.3165\tBGFV\t15:32:05\nsell\t08/08/2019\t40.182.130.110\toco\t27.335\t384.216\tBCE\t12:32:18\nbuy\t08/30/2019\t167.188.26.44\tmarketToLimit\t4.392\t2587.4485\tCOF^C\t9:55:42\nsell\t08/12/2019\t164.55.43.221\tlimit\t4.985\t2366.838\tCMFN\t11:09:48\nsell\t08/18/2019\t227.129.174.179\toco\t14.52\t3322.701\tASET\t13:12:02\nbuy\t08/11/2019\t42.11.149.235\tlimit\t19.227\t1385.7762\tKODK.WS\t5:29:20\nsell\t08/13/2019\t102.35.49.105\toco\t23.287\t1931.0346\tAMID\t15:20:30\nbuy\t08/19/2019\t190.124.151.219\tmarket\t15.7696\t602.016\tHGT\t3:07:43\nbuy\t08/06/2019\t156.157.56.76\tquote\t4.605\t3630.7635\tBEN\t10:52:48\nbuy\t08/08/2019\t112.152.87.127\tcross\t17.9714\t3679.8442\tIIIN\t21:11:05\nsell\t08/26/2019\t212.224.120.91\tmarket\t15.5633\t86.303\tDGRE\t4:56:50\nsell\t08/09/2019\t210.140.213.95\toco\t36.2748\t3223.122\tGRFS\t8:21:26\nbuy\t08/22/2019\t101.195.163.205\tlimit\t32.9115\t2715.6752\tTRNS\t20:20:45\nsell\t08/15/2019\t174.235.5.129\toco\t18.486\t2481.7819\tCHSP^A.CL\t1:45:45\nsell\t08/05/2019\t40.118.207.147\tmarket\t21.6228\t918.08\tSPLP^A\t14:43:26\nbuy\t08/07/2019\t94.253.255.200\tcross\t27.189\t195.374\tOR\t14:49:30\nsell\t08/10/2019\t145.211.190.244\tlimit\t17.7459\t1672.621\tHYI\t13:12:00\nbuy\t08/15/2019\t227.82.220.203\tlimit\t29.2421\t4058.9248\tENLC\t23:20:15\nbuy\t08/03/2019\tnull\tcross\t6.8536\tnull\tACTG\t8:30:21\nbuy\t08/30/2019\t252.105.164.41\tmarket\t33.9012\t3097.9338\tROBO\t5:00:17\nsell\t08/22/2019\t193.11.140.63\tquote\t20.0181\t1967.5508\tBBT^D\t4:15:20\nsell\t08/02/2019\t86.157.23.96\tmarket\t21.0651\t1595.965\tSAIA\t15:57:04\nbuy\t08/18/2019\t13.139.121.38\tlimit\t7.4778\t2324.289\tXIV\t2:09:37\nbuy\t08/15/2019\t234.189.216.30\tmarketToLimit\t18.9696\t1560.6888\tOHAI\t22:07:14\nbuy\t08/29/2019\t37.87.69.169\tmarketToLimit\t19.43\t2093.9336\tBAC.WS.A\t3:45:08\nnull\t08/08/2019\t83.118.45.231\tbatch\t19.5552\t1275.1574\tGPC\t20:51:37\nsell\t08/08/2019\t58.142.245.38\tmarket\t46.4788\t882.1566\tARC\t7:20:36\nsell\t08/28/2019\t47.220.147.61\tlimit\t27.3525\t817.539\tUNTY\t9:57:28\nsell\t08/27/2019\t180.160.5.49\toco\t12.138\t844.1415\tARI\t17:25:18\nsell\t08/12/2019\t46.247.90.99\tbestLimit\t25.619\t1913.2922\tKRMA\t10:45:05\nnull\t08/09/2019\t102.23.91.140\tlimit\t29.8775\t1591.8144\tRSG\t15:53:26\nbuy\t08/06/2019\t136.235.141.65\tquote\t13.6436\t2040.4461\tIIIN\t6:11:49\nbuy\t08/26/2019\t24.238.9.61\tquote\t31.616\t2412.8984\tCECO\t23:05:35\nbuy\t08/17/2019\t37.164.49.249\tlimit\t9.8424\t3536.085\tGAINM\t21:33:37\nbuy\t08/23/2019\t180.155.193.41\tcmo\t24.167\t1119.6902\tBVXVW\t11:25:43\nnull\t08/07/2019\t57.61.190.128\tcross\t22.832\t565.4517\tTLRD\t4:53:25\nsell\t08/18/2019\t76.238.16.98\tcmo\t23.6761\t1098.9648\tNVET\t17:50:47\nbuy\t08/27/2019\tnull\tquote\t35.4541\tnull\tUFS\t1:47:37\nbuy\t08/17/2019\t31.22.200.47\tmarketToLimit\t8.4016\t1395.9984\tSHG\t22:09:49\nsell\t08/16/2019\t15.198.147.55\tquote\t15.744\t99.025\tVLT\t14:13:37\nnull\t08/27/2019\t253.104.91.130\tbatch\t14.5418\t648.979\tXIN\t13:32:36\nbuy\t08/02/2019\t234.51.218.205\tcmo\t3.52\t1508.1965\tTSLF\t4:16:07\nbuy\t08/18/2019\t217.86.1.160\tquote\t25.3308\t2962.269\tOBLN\t17:19:43\nbuy\t08/03/2019\t110.98.152.98\tcmo\t21.56\t2582.2524\tUONE\t15:30:36\nbuy\t08/12/2019\t206.143.123.0\tlimit\t26.754\t3003.582\tRVSB\t21:58:03\nbuy\t08/21/2019\t27.157.163.44\tcross\t11.968\t1579.7788\tKIM\t6:40:59\nbuy\t08/06/2019\t129.41.252.179\tmarket\tnull\t2020.9748\tPLOW\t2:20:52\nbuy\t08/07/2019\t161.54.10.90\toco\t31.464\t1256.1867\tCHRW\t8:37:13\nsell\t08/11/2019\t212.112.52.250\tbestLimit\t27.5235\t2644.988\tNUV\t13:50:04\nsell\t08/16/2019\t196.31.113.35\tbatch\t21.3724\t2327.3328\tCVTI\t10:34:39\nsell\t08/21/2019\t32.197.207.253\tbestLimit\t30.0616\t1522.9234\tHTHT\t4:18:16\nbuy\t08/15/2019\t81.89.1.186\tlimit\tnull\t2912.3497\tCRBP\t6:08:58\nbuy\t08/29/2019\t65.80.202.169\tcross\t26.5815\t3082.4292\tCBI\t12:51:48\nsell\t08/07/2019\t247.208.116.210\tlimit\t21.1508\t79.993\tHPT\t9:30:52\nbuy\t08/18/2019\t29.244.156.222\toco\t25.6888\t1894.31\tGABC\t5:24:36\nbuy\t08/24/2019\t129.41.52.235\tquote\t17.3452\t1833.3136\tZIV\t1:17:14\nsell\t08/21/2019\t245.13.55.111\tbatch\t3.925\t2463.573\tASML\t3:11:44\nbuy\t08/29/2019\t175.170.184.86\tcross\t18.11\t1880.9336\tAUO\t23:04:53\nsell\t08/08/2019\t144.149.18.63\tlimit\t31.0792\t3953.5574\tNETE\t16:51:16\nbuy\t08/02/2019\t37.23.182.174\tlimit\t11.6622\t2132.0768\tCREE\t8:47:04\nsell\t08/21/2019\t220.181.104.185\toco\t19.208\t1516.2999\tFCEL\t17:08:05\nsell\t08/14/2019\t124.82.126.120\tlimit\t32.7672\t1969.7202\tNRZ\t15:00:10\nbuy\t08/26/2019\t28.210.177.17\tbatch\t28.337\t3019.4236\tEVAR\t8:49:50\nsell\t08/25/2019\t126.63.65.226\tbatch\t17.2625\t2088.3828\tUGI\t4:52:23\nsell\t08/02/2019\t152.246.223.162\tlimit\t12.1257\t4482.1266\tRELL\t8:08:59\nsell\t08/12/2019\t69.20.211.114\tmarket\t26.373\t4910.111\tFHN^A\t10:40:22\nnull\t08/24/2019\t64.99.125.162\tlimit\t3.035\t3684.541\tDAC\t0:28:28\nsell\t08/01/2019\t43.89.164.112\tbestLimit\t17.1521\t592.5549\tCHS\t1:27:46\nbuy\t08/24/2019\t86.201.191.112\toco\t40.356\t1239.3624\tHSIC\t18:32:09\nbuy\t08/13/2019\t40.247.151.216\tquote\t41.2928\t2075.81\tDLPH\t22:10:40\nbuy\t08/04/2019\t63.65.126.159\tlimit\tnull\t1151.6544\tXBIT\t13:59:02\nbuy\t08/12/2019\t154.78.6.252\tmarketToLimit\t9.4054\t1645.648\tLRN\t7:57:17\nbuy\t08/05/2019\t195.154.11.177\tbestLimit\t17.105\t2244.6895\tUSLM\t4:52:13\nsell\t08/07/2019\t120.194.9.34\tquote\t13.3304\t1250.998\tCNA\t14:00:12\nbuy\t08/10/2019\t237.236.243.86\tlimit\t32.5068\t554.6282\tUNB\t11:17:13\nbuy\t08/26/2019\t227.224.219.177\tbatch\t24.39\t1384.491\tMCS\t22:08:03\nsell\t08/19/2019\t198.74.84.16\tbatch\t14.8876\t86.044\tASFI\t17:09:29\nsell\t08/18/2019\t32.79.32.165\tmarketToLimit\t32.3532\t2202.3876\tOMAB\t18:09:33\nbuy\t08/22/2019\t145.227.140.107\tmarket\t40.8564\t1630.7486\tNEPT\t9:34:38\nbuy\t08/27/2019\t181.167.31.173\tmarket\t27.0248\t3150.7434\tCGIX\t2:24:26\nbuy\t08/24/2019\tnull\toco\t28.4972\tnull\tCVLY\t3:59:49\nsell\t08/28/2019\t156.64.207.247\tmarket\t25.6256\t2577.3426\tNAO\t7:44:30\nsell\t08/02/2019\t155.209.109.247\tquote\t18.544\t1969.9176\tCONE\t22:30:48\nsell\t08/17/2019\t172.46.50.23\tcmo\t21.12\t2973.5532\tONSIZ\t14:38:26\nsell\t08/07/2019\t115.229.43.120\tquote\t32.5105\t2544.8416\tHCKT\t6:27:55\nnull\t08/20/2019\t109.80.213.185\tbatch\t37.1065\t3040.934\tRECN\t21:42:20\nbuy\t08/17/2019\t36.186.14.117\tquote\t23.166\t3215.8308\tFBC\t10:57:15\nsell\t08/13/2019\t144.58.100.252\tcross\t19.0755\t2564.9\tEAGLU\t3:45:58\nsell\t08/10/2019\t138.237.231.73\tcmo\t3.62\t2214.6048\tCBL^D\t15:49:42\nsell\t08/13/2019\t211.122.148.106\tbatch\t41.0576\t1456.6464\tGFNCP\t17:07:55\nsell\t08/16/2019\t183.37.118.102\tquote\tnull\t1482.6028\tGTY\t20:55:26\nbuy\t08/10/2019\t87.139.239.242\tquote\t21.2396\t520.2915\tSVA\t19:09:12\nbuy\t08/02/2019\t94.44.199.247\tmarketToLimit\t13.09\t3074.522\tSCHW^D\t13:31:37\nbuy\t08/03/2019\t111.242.89.67\tcross\t3.1875\t1308.999\tPDCO\t21:15:42\nsell\t08/20/2019\tnull\tmarketToLimit\t28.7247\tnull\tUZB\t18:56:20\nsell\t08/19/2019\t157.220.164.159\tquote\t28.3098\t604.63\tRPAI^A\t10:04:18\nbuy\t08/02/2019\t243.125.192.152\tmarket\t15.624\t2297.3223\tWBT\t0:37:11\nsell\t08/15/2019\t194.43.1.141\tquote\t15.8788\t339.5139\tTTEC\t8:24:32\nsell\t08/06/2019\t29.173.146.182\tcross\t38.1276\t2989.9951\tBAC^L\t1:21:20\nsell\t08/11/2019\t211.212.187.62\toco\t20.819\t2942.6778\tNH\t2:42:13\nsell\t08/05/2019\t64.74.40.19\tbatch\t8.3692\t984.0702\tTER\t15:23:42\nbuy\t08/03/2019\t16.198.229.94\tmarketToLimit\t26.1616\t1734.777\tIIJI\t14:43:28\nsell\t08/17/2019\t104.177.248.141\toco\t20.9281\t2182.9275\tCARV\t18:39:10\nbuy\t08/10/2019\tnull\tlimit\t16.7958\tnull\tJMT\t15:48:05\nsell\t08/25/2019\t205.32.108.140\tbestLimit\t25.6296\t1060.5809\tELF\t12:37:13\nbuy\t08/01/2019\t217.232.141.63\tmarket\t29.1688\t2414.412\tSA\t5:09:25\nsell\t08/20/2019\t191.55.86.66\tquote\t11.3148\t2456.791\tBDN\t2:35:46\nsell\t08/09/2019\t218.244.120.40\tmarketToLimit\t22.8942\t1165.0142\tSLIM\t10:11:16\nbuy\t08/28/2019\t81.173.157.66\tlimit\t20.097\t122.949\tCUBE\t2:16:13\nsell\t08/12/2019\t131.196.86.237\tmarketToLimit\t23.276\t833.34\tFSFG\t20:19:04\nsell\t08/05/2019\t235.70.83.210\tmarketToLimit\t17.0768\t2091.034\tDDR^K\t21:42:26\nsell\t08/09/2019\t212.107.92.162\tquote\t4.1925\t1929.3507\tAMOV\t22:03:03\nsell\t08/17/2019\t177.137.248.140\tquote\t15.6113\t1656.4923\tSXI\t2:30:29\nbuy\t08/15/2019\t67.5.131.250\tquote\tnull\t973.0408\tCALI\t8:52:29\nsell\t08/22/2019\t85.135.217.15\toco\t24.479\t3111.1658\tBFK\t14:55:43\nbuy\t08/08/2019\t41.184.148.185\tlimit\t11.4787\t1492.7094\tGEH\t8:17:17\nsell\t08/09/2019\t210.11.167.195\toco\t7.9152\t2598.272\tJLS\t2:28:40\nsell\t08/18/2019\t1.23.215.229\tcmo\t11.7585\t2036.3408\tDD^A\t22:01:59\nbuy\t08/20/2019\t219.82.33.163\tbatch\t36.1764\t1082.7075\tTDC\t20:19:30\nbuy\t08/12/2019\t189.108.57.69\tmarket\t4.4585\t3877.0615\tARW\t14:05:04\nbuy\t08/04/2019\t26.69.246.191\tcross\t37.113\t1545.6903\tRFTA\t0:07:08\nsell\t08/07/2019\t210.61.60.233\toco\t33.579\t1732.6596\tCBZ\t9:52:14\nsell\t08/20/2019\t125.134.228.188\tbatch\t20.6763\t1750.3218\tVIRT\t16:55:31\nsell\t08/22/2019\t197.223.104.32\tbatch\t6.8224\t1476.3218\tNXQ\t9:30:34\nbuy\t08/12/2019\t244.6.197.210\tcross\t3.4875\t715.75\tCGNT\t15:15:28\nsell\t08/04/2019\t203.234.94.107\tquote\t4.2525\t3051.7686\tKOF\t12:34:15\nsell\t08/02/2019\t63.218.153.252\tlimit\t7.986\t3485.7075\tWRB^D\t6:37:54\nsell\t08/29/2019\tnull\tbestLimit\t40.8609\tnull\tEQBK\t3:28:37\nsell\t08/13/2019\t84.106.238.181\tcross\t43.296\t1905.1609\tMCD\t1:28:55\nbuy\t08/28/2019\t13.194.77.136\tbestLimit\t31.6512\t1260.1386\tCAAS\t19:02:23\nsell\t08/29/2019\t210.69.53.153\tmarket\t16.5\t782.6867\tCC\t20:02:00\nsell\t08/08/2019\t35.135.83.60\tbestLimit\t19.0152\t3594.8666\tOME\t5:10:25\nbuy\t08/24/2019\t50.181.46.219\tmarket\t13.158\t3224.9526\tAROW\t11:33:09\nsell\t08/28/2019\t176.68.217.196\tcmo\t4.368\t2416.4604\tIPAR\t20:23:39\nsell\t08/26/2019\t73.66.131.61\tlimit\t32.094\t2203.0728\tNATH\t11:53:08\nsell\t08/18/2019\t161.108.45.126\tmarket\t16.4724\t2776.9476\tEXPO\t6:16:14\nbuy\t08/12/2019\t8.231.16.31\tmarket\t36.3182\t1170.8686\tRSO\t15:54:41\nbuy\t08/27/2019\t53.235.231.138\tcmo\t3.4162\t2562.6882\tEXP\t5:30:32\nbuy\t08/16/2019\t169.217.121.73\tmarketToLimit\t7.0014\t3813.7086\tMFM\t22:59:50\nsell\t08/12/2019\t253.79.83.63\tcmo\t19.1663\t3230.2166\tIIF\t9:45:23\nsell\t08/13/2019\t22.111.86.110\tmarketToLimit\t42.6072\t1872.4608\tRZA\t6:24:01\nsell\t08/04/2019\t34.180.201.195\tbatch\t27.0248\t2601.744\tHCKT\t13:31:13\nbuy\t08/07/2019\t229.74.179.1\tmarketToLimit\t4.0425\t2048.2539\tMRC\t11:21:08\nbuy\t08/29/2019\t177.143.52.75\tcross\t12.4956\t1339.92\tNTAP\t17:54:54\nsell\t08/02/2019\t150.48.16.117\tcmo\t11.6035\t267.5951\tARLZ\t22:10:30\nsell\t08/01/2019\t33.120.146.138\tcross\t16.7969\t2496.4344\tCTR\t3:57:05\nsell\t08/14/2019\t4.240.194.165\tcross\t27.0449\t3086.7564\tMSF\t19:30:56\nbuy\t08/22/2019\t111.161.1.135\tcmo\t12.2368\t2791.2776\tNYV\t14:20:16\nsell\t08/15/2019\t41.255.243.66\tcmo\t4.4658\t1642.0797\tFUND\t11:25:31\nbuy\t08/06/2019\t136.32.187.56\tmarket\t14.4816\t1075.2561\tTUES\t12:35:52\nbuy\t08/06/2019\t126.64.160.32\tlimit\t25.9192\t2209.2748\tSOJB\t20:47:48\nbuy\t08/06/2019\t206.204.136.170\tcmo\t5.7564\t2744.0728\tWMLP\t11:12:47\nbuy\t08/01/2019\t140.180.64.86\tlimit\t28.6563\t2649.6588\tUSAK\t16:26:03\nsell\t08/15/2019\t26.149.12.215\tmarket\t45.864\t99.12\tACGLP\t14:59:44\nsell\t08/20/2019\t85.161.105.123\tcmo\t26.56\t1444.1427\tNFEC\t0:48:32\nbuy\t08/12/2019\t186.66.98.226\tcross\t31.6536\t250.4918\tCATYW\t14:40:14\nsell\t08/18/2019\t118.79.165.177\tcmo\t6.8406\t2576.7716\tHTF\t11:21:40\nsell\t08/18/2019\t82.204.35.219\tlimit\t12.3702\t2171.9438\tAL\t18:50:01\nbuy\t08/20/2019\t11.99.249.8\tcross\t15.15\t905.6599\tBELFA\t19:46:46\nbuy\t08/27/2019\t207.90.195.196\tquote\t13.7238\t830.104\tSTAR^F\t2:09:32\nnull\t08/18/2019\t62.227.26.184\tcross\t34.0095\t1394.5608\tPYPL\t8:03:07\nsell\t08/15/2019\t49.234.5.58\toco\t38.958\t2820.6079\tVERI\t3:35:55\nsell\t08/06/2019\t58.12.77.20\tmarket\t35.739\t2200.7546\tTI\t11:21:33\nsell\t08/10/2019\t70.191.13.145\tbatch\t6.6174\t926.7465\tGS^A\t1:30:58\nsell\t08/26/2019\tnull\tcmo\t40.1268\tnull\tGSHTU\t11:07:04\nsell\t08/19/2019\t123.156.177.96\tcmo\t11.207\t1281.96\tEOS\t16:11:35\nsell\t08/02/2019\t134.154.55.26\tmarket\t3.495\t3283.6804\tDYN.WS\t5:49:39\nbuy\t08/30/2019\t68.219.92.125\tbestLimit\t19.7026\t245.4775\tNFBK\t23:35:01\nbuy\t08/07/2019\t119.77.42.247\tcross\tnull\t1936.3526\tSIRI\t8:47:00\nsell\t08/13/2019\t170.200.219.89\tcross\t23.56\t1055.124\tIFGL\t1:19:00\nsell\t08/05/2019\t232.218.99.12\tcmo\t52.866\t1601.0298\tNGHCZ\t12:22:53\nbuy\t08/24/2019\t207.1.137.47\tcmo\t39.1952\t1884.2824\tCOP\t23:19:44\nbuy\t08/12/2019\t134.250.61.165\tlimit\t11.1222\t3125.0796\tJRI\t0:19:46\nbuy\t08/11/2019\t194.41.27.151\tmarket\t27.9972\t1572.9033\tEVLMC\t19:40:08\nsell\t08/02/2019\t170.188.246.0\tbatch\t26.883\t1798.5232\tMDRX\t11:48:00\nsell\t08/23/2019\t50.243.252.195\tbestLimit\t10.9865\t3777.2968\tBFAM\t20:59:04\nsell\t08/20/2019\t2.77.21.131\tbestLimit\t26.7696\t2810.5661\tNVCR\t22:52:09\nsell\t08/16/2019\tnull\tlimit\t51.0474\tnull\tCLIR\t19:05:48\nsell\t08/30/2019\t233.29.56.117\tlimit\t3.8125\t570.0627\tDNR\t10:43:28\nsell\t08/08/2019\t14.200.231.173\tcmo\t31.1805\t1907.1144\tMORN\t14:47:03\nsell\t08/11/2019\t61.212.25.202\tmarket\t31.266\t3293.206\tNAII\t18:02:30\nsell\t08/29/2019\t89.160.187.66\tmarket\t8.5095\t2335.578\tCHUBK\t3:25:14\nsell\t08/07/2019\t12.121.122.210\tquote\t25.7796\t1347.4922\tLILA\t23:25:53\nbuy\t08/12/2019\t87.79.182.43\tmarket\t31.5799\t1740.6544\tCOF\t8:45:35\nbuy\t08/18/2019\t32.130.120.36\tbatch\t25.9584\t2627.9442\tAUDC\t18:39:58\nbuy\t08/11/2019\t146.55.36.245\tcmo\t37.8794\t1079.2555\tTBI\t3:02:38\nbuy\t08/15/2019\t108.192.213.57\tbatch\t15.4155\t1898.028\tGSOL\t1:10:50\nbuy\t08/30/2019\t206.27.54.61\tcmo\t12.222\t699.5841\tCTZ\t12:14:34\nsell\t08/22/2019\t113.248.121.109\tlimit\t20.6708\t3879.1533\tLSCC\t18:13:03\nbuy\t08/26/2019\t88.201.208.208\tlimit\t36.712\t3571.293\tMAYS\t2:45:52\nbuy\t08/04/2019\t40.111.122.77\tcmo\t5.481\t2264.156\tMGLN\t9:10:24\nbuy\t08/29/2019\t227.15.74.13\toco\t20.95\t1004.581\tFDX\t15:10:57\nbuy\t08/29/2019\t39.108.160.146\tlimit\t15.3935\t2467.6926\tITW\t0:30:55\nbuy\t08/19/2019\t248.212.135.170\tlimit\t12.0345\t666.1761\tSCSC\t1:11:48\nbuy\t08/29/2019\t67.28.113.190\tlimit\t30.1392\t1920.5667\tFENX\t18:55:55\nbuy\t08/16/2019\t52.141.43.232\tmarket\t17.5824\t2088.4112\tSMED\t13:52:50\nsell\t08/26/2019\t170.84.201.99\tmarketToLimit\t4.125\t2597.2152\tAMBCW\t3:07:10\nbuy\t08/22/2019\t230.15.38.243\tcross\t10.197\t2741.3672\tPHX\t2:48:34\nbuy\t08/21/2019\t197.161.38.99\tmarket\t33.2856\t3165.9168\tEAB\t22:05:02\nnull\t08/22/2019\t248.121.254.35\tcmo\t15.0412\t2874.15\tPRGX\t11:19:38\nbuy\t08/01/2019\t90.237.111.70\tbestLimit\t24.6974\t2156.1037\tSYK\t14:22:14\nbuy\t08/30/2019\t25.201.77.43\tlimit\t22.9425\t93.174\tFFG\t5:51:06\nbuy\t08/19/2019\t198.79.161.151\tquote\t20.826\t4249.3932\tSXE\t0:38:25\nnull\t08/11/2019\t197.244.99.231\tquote\t24.4706\t1082.6\tCPL\t11:52:23\nsell\t08/21/2019\tnull\tbestLimit\t19.652\tnull\tUBSI\t4:29:49\nsell\t08/25/2019\t237.9.122.177\tquote\t4.6023\t1154.6197\tGBDC\t8:46:09\nbuy\t08/03/2019\t59.152.224.141\tquote\t26.0442\t2148.8813\tZUMZ\t8:56:29\nbuy\t08/23/2019\t240.143.133.88\toco\t16.3875\t2819.4204\tCPTA\t12:59:36\nsell\t08/01/2019\t37.26.69.52\toco\t24.8346\t1245.9447\tPB\t8:15:14\nsell\t08/15/2019\t162.15.146.175\tmarket\t28.938\t2112.9147\tDRIO\t8:23:54\nbuy\t08/15/2019\t179.197.17.94\tcmo\t24.795\t1727.085\tTCS\t13:16:15\nbuy\t08/15/2019\t243.10.46.154\tbatch\t39.7176\t1738.7308\tBKS\t10:39:54\nbuy\t08/01/2019\t232.58.93.182\tquote\t10.9881\t2290.603\tENLC\t2:02:28\nsell\t08/03/2019\t4.30.103.28\tlimit\t11.5269\t-1.0\tCLA.CL\t1:59:49\nbuy\t08/30/2019\t14.209.211.153\tmarket\t3.3825\t952.7094\tRTNB\t5:08:17\nsell\t08/17/2019\t240.63.129.10\toco\t3.7925\t1199.6101\tFDP\t7:02:24\nbuy\t08/27/2019\t16.191.120.241\tmarket\t28.696\t1785.63\tPSB\t1:54:38\nsell\t08/19/2019\t78.253.107.66\tcmo\t16.5996\t4760.5976\tAFSS\t14:36:39\nsell\t08/02/2019\tnull\tcross\t29.6228\tnull\tUCFC\t13:57:06\nbuy\t08/23/2019\t105.101.156.84\tbatch\t9.8136\t3432.9858\tSVA\t9:13:19\nsell\t08/27/2019\t218.87.5.0\tmarketToLimit\t21.879\t3341.2225\tRPT^D\t3:03:16\nbuy\t08/15/2019\t90.119.248.141\tcmo\t23.2375\t1816.9434\tPMT^A\t3:27:58\nbuy\t08/22/2019\t21.229.88.221\tlimit\t9.6534\t1401.2128\tKLXI\t20:36:25\nbuy\t08/28/2019\t81.222.214.148\tcross\t12.216\t1469.799\tBCR\t20:08:39\nsell\t08/21/2019\t107.156.30.117\tmarketToLimit\t3.4675\t3185.2809\tGTYHU\t4:55:50\nsell\t08/18/2019\t141.155.181.160\tquote\t24.339\t1474.0418\tCSBR\t10:10:12\nsell\t08/07/2019\t24.140.9.254\tcmo\t37.6528\t101.555\tSQZZ\t18:28:03\nsell\t08/30/2019\t239.94.218.39\tbestLimit\t34.3451\t1668.8312\tOC\t10:14:07\nbuy\t08/05/2019\t195.120.187.152\toco\t18.2595\t232.824\tMPLX\t14:31:51\nsell\t08/16/2019\tnull\tlimit\t28.8028\tnull\tPVTD\t18:29:47\nbuy\t08/10/2019\t21.211.191.72\tmarketToLimit\t36.456\t2702.6451\tINBK\t4:18:31\nbuy\t08/10/2019\t115.150.167.8\tmarket\t32.9472\t2279.0196\tALOT\t5:48:47\nsell\t08/16/2019\t74.204.15.169\tcmo\t27.95\t1522.0478\tIPL^D\t0:20:21\nbuy\t08/12/2019\t79.174.241.65\tbestLimit\t34.0954\t2688.1303\tSBCP\t7:12:35\nsell\t08/06/2019\t179.102.167.61\tlimit\t3.9275\t1507.1214\tFLT\t9:41:21\nbuy\t08/01/2019\t89.72.183.186\toco\t13.2495\t1666.7784\tDYNC\t7:56:28\nsell\t08/19/2019\t167.164.245.237\tcross\tnull\t2351.0904\tVVUS\t10:27:31\nbuy\t08/11/2019\t28.212.83.208\toco\tnull\t2609.0344\tHBIO\t10:31:35\nbuy\t08/04/2019\t95.121.78.114\tmarketToLimit\t6.314\t1202.8653\tSFR\t18:46:08\nbuy\t08/16/2019\t206.4.11.188\tcross\t28.8858\t2973.5992\tACP\t9:24:37\nbuy\t08/28/2019\t48.142.5.84\tbatch\t23.7533\t2468.6618\tCAL\t3:03:42\nsell\t08/08/2019\t66.248.92.173\tbestLimit\t33.4194\t3364.27\tFSLR\t14:46:30\nbuy\t08/22/2019\t141.140.71.115\tmarketToLimit\t4.2141\t4539.348\tRSO^B\t1:35:54\nbuy\t08/23/2019\tnull\toco\tnull\tnull\tEFII\t3:48:45\nbuy\t08/08/2019\t187.86.225.66\tcross\t15.8769\t2593.6925\tSTNG\t14:38:58\nsell\t08/15/2019\t148.84.69.204\toco\t4.3225\t2684.088\tNBL\t10:38:10\nbuy\t08/07/2019\t246.207.86.36\tbestLimit\t19.154\t1765.2888\tOHGI\t7:13:38\nsell\t08/27/2019\t177.202.89.188\toco\t10.4832\t2102.2506\tS\t10:33:49\nsell\t08/22/2019\tnull\tcmo\t17.3937\tnull\tVAR\t12:15:46\nbuy\t08/20/2019\t142.162.218.233\tbatch\t23.5812\t2901.2995\tACM\t6:40:21\nsell\t08/26/2019\t153.156.231.3\tcross\t11.424\t1101.4266\tRYAAY\t1:17:54\nbuy\t08/15/2019\t58.245.171.184\tmarketToLimit\t17.316\t2349.5733\tFGEN\t16:44:34\nsell\t08/16/2019\t165.145.84.208\toco\t34.1275\t2741.9548\tQTS\t14:20:42\nbuy\t08/03/2019\t172.202.95.18\tbatch\t14.1904\t1417.4803\tCHSCM\t11:46:11\nsell\t08/10/2019\t245.189.134.253\tbatch\t31.1144\t3327.2976\tSTT\t19:51:13\nsell\t08/09/2019\t143.227.132.197\tcmo\t33.9007\t1236.8262\tPRTS\t3:35:12\nsell\t08/26/2019\t197.191.115.102\toco\t38.9266\t1246.3248\tBNY\t10:18:24\nbuy\t08/09/2019\t160.100.166.119\tmarket\t9.7416\t-1.0\tOAKS^A\t5:43:07\nsell\t08/09/2019\t120.7.233.184\tcmo\t15.8004\t1392.034\tBBT\t14:52:36\nsell\t08/07/2019\tnull\tcross\t13.2804\tnull\tCLNT\t19:31:09\nsell\t08/30/2019\t242.217.131.233\tmarket\t20.202\t2007.3272\tRSYS\t10:55:45\nbuy\t08/19/2019\t81.151.203.34\tlimit\t29.8954\t1859.9799\tFOE\t22:12:08\nsell\t08/04/2019\t133.248.121.245\tbestLimit\t38.454\t-1.0\tAMAT\t1:31:45\nbuy\t08/25/2019\t109.232.48.116\tbatch\t12.753\t1522.3576\tTLRD\t22:59:50\nsell\t08/30/2019\t221.211.205.138\tmarket\t42.1326\t1650.6\tKYO\t10:27:19\nsell\t08/14/2019\t147.210.159.89\tmarket\t20.306\t866.2797\tNRG\t16:57:24\nbuy\t08/26/2019\t163.49.60.183\tmarket\t32.4896\t3083.5896\tABR\t6:59:32\nsell\t08/13/2019\t7.66.165.165\tquote\t6.7277\t1011.6904\tFSS\t23:20:41\nbuy\t08/11/2019\t168.218.114.170\tcmo\t19.6688\t3147.072\tCBMG\t8:48:12\nbuy\t08/22/2019\t24.114.25.174\tcross\t21.2553\t2383.7068\tGGT\t3:52:49\nbuy\t08/12/2019\t79.124.205.70\tlimit\t4.135\t2003.742\tPWR\t6:09:01\nsell\t08/17/2019\t113.110.16.44\tquote\t21.8984\t2561.2028\tEFC\t11:09:42\nbuy\t08/06/2019\t102.70.221.219\tcmo\t31.3152\t2671.0638\tMTB.WS\t7:07:38\nbuy\t08/19/2019\t125.5.50.172\tlimit\t24.4755\t2436.2032\tY\t18:38:01\nbuy\t08/17/2019\t254.112.195.164\tbatch\t38.9512\t728.692\tTNP^E\t6:05:45\nbuy\t08/04/2019\t142.165.115.71\tcmo\t14.996\t1952.148\tBGX\t11:00:00\nsell\t08/10/2019\tnull\tcross\t37.89\tnull\tNHLD\t13:08:31\nbuy\t08/10/2019\t20.11.252.227\tmarket\t33.8496\t1621.8928\tNORD\t23:13:18\nbuy\t08/21/2019\t2.58.2.173\tcross\t29.76\t2176.6185\tFT\t20:12:59\nsell\t08/14/2019\t133.102.249.12\toco\t29.4728\t1045.0404\tXTLB\t17:42:09\nbuy\t08/26/2019\t145.61.27.50\toco\t26.8461\t589.148\tRCON\t19:24:49\nbuy\t08/02/2019\t127.175.10.157\tbatch\t8.6292\t1421.766\tRFI\t1:27:17\nbuy\t08/30/2019\t24.21.180.32\tbatch\t21.875\t3177.4185\tBOH\t4:45:30\nsell\t08/10/2019\t72.6.223.135\tmarket\t17.98\t2292.5264\tHDS\t23:32:54\nsell\t08/02/2019\t191.61.186.65\tcross\t30.7825\t3998.115\tMITL\t13:16:14\nsell\t08/12/2019\t213.111.236.49\tcross\t6.7248\t3050.58\tAPPF\t5:56:47\nbuy\t08/12/2019\t165.88.102.202\toco\t39.6396\t2444.7098\tCE\t22:06:24\nbuy\t08/07/2019\t83.182.18.96\tbestLimit\t12.03\t2061.4419\tCSL\t5:06:37\nbuy\t08/18/2019\t52.66.234.96\tmarket\t32.7834\t2767.275\tEGOV\t2:48:46\nbuy\t08/11/2019\t19.223.235.30\tmarketToLimit\t34.9676\t2056.908\tSAEX\t21:58:36\nbuy\t08/02/2019\t49.18.189.236\tmarketToLimit\t4.3625\t1457.5239\tMER^K\t13:51:26\nsell\t08/03/2019\t206.59.243.19\tmarket\t16.6345\t758.604\tTPVZ\t5:13:26\nbuy\t08/08/2019\t159.241.55.177\tbatch\t14.5515\t1493.748\tFNX\t9:53:19\nsell\t08/10/2019\t31.112.112.27\tmarketToLimit\tnull\t2099.725\tOEC\t13:40:14\nsell\t08/04/2019\t11.201.239.189\tmarket\t11.6721\t2637.6826\tFPA\t6:36:09\nbuy\t08/26/2019\t86.166.24.7\tbestLimit\t23.085\t285.579\tEDAP\t21:33:54\nbuy\t08/07/2019\tnull\tmarketToLimit\t18.4212\tnull\tKRP\t13:46:18\nbuy\t08/01/2019\t65.102.28.0\tlimit\t43.7852\t1364.4459\tLPT\t9:53:00\nsell\t08/04/2019\t75.65.15.81\tcross\t18.8576\t749.2836\tKFY\t10:34:22\nsell\t08/27/2019\t204.29.41.56\tbatch\tnull\t93.205\tHOG\t20:46:22\nnull\t08/15/2019\t100.99.162.77\toco\t10.3368\t2535.4788\tRFEU\t9:58:23\nbuy\t08/04/2019\tnull\tcross\t18.8139\tnull\tRMTI\t4:03:26\nbuy\t08/06/2019\t147.39.179.146\tlimit\t17.1904\t1351.6268\tCLRB\t23:30:16\nsell\t08/16/2019\t243.29.122.255\tlimit\t23.2576\t866.45\tIPCC\t5:50:31\nsell\t08/15/2019\t49.71.109.0\tmarketToLimit\t14.4189\t2788.708\tAMH\t19:35:46\nsell\t08/30/2019\t198.73.173.208\tcmo\t28.1385\t3291.2431\tWINS\t14:07:24\nsell\t08/18/2019\t175.101.147.201\toco\t25.1959\t2141.3376\tMFG\t21:28:56\nsell\t08/29/2019\t23.138.94.45\toco\t26.928\t1862.3724\tCVLY\t16:48:34\nbuy\t08/02/2019\tnull\tlimit\t18.0721\tnull\tSBAC\t21:35:50\nbuy\t08/08/2019\t193.123.223.144\tbatch\t18.6004\t3203.7428\tTTD\t13:29:28\nsell\t08/17/2019\t28.236.249.123\tmarket\t37.036\t1758.0006\tNGS\t23:52:02\nbuy\t08/13/2019\t136.68.234.210\tbatch\tnull\t2646.6708\tADVM\t19:56:08\nbuy\t08/17/2019\t191.183.143.199\toco\t13.1144\t2569.8374\tBWINA\t18:58:36\nbuy\t08/12/2019\t147.181.29.53\tmarket\t42.9806\t-1.0\tNLY\t16:35:38\nbuy\t08/15/2019\t253.217.49.133\tbatch\t23.3904\t1847.5235\tVRTS\t17:45:56\nbuy\t08/05/2019\t223.97.121.99\tquote\t16.8474\t2776.0705\tIP\t5:04:31\nsell\t08/30/2019\t57.252.161.26\tmarket\t41.2236\t1496.8137\tGPE^A\t16:33:36\nbuy\t08/03/2019\t38.155.27.82\tcmo\t3.5375\t3338.1257\tGNMA\t11:48:51\nsell\t08/26/2019\t5.97.171.168\tmarket\t13.0656\t387.3182\tBNJ\t18:18:00\nsell\t08/22/2019\t24.210.64.71\tbestLimit\t15.3964\t3950.109\tTRS\t3:08:03\nbuy\t08/23/2019\tnull\tbestLimit\t11.8059\tnull\tMRC\t6:31:45\nbuy\t08/18/2019\t255.159.8.117\tmarketToLimit\t28.9162\t1360.4375\tYUM\t4:37:28\nbuy\t08/28/2019\t95.4.33.20\tbatch\t35.5673\t2891.7516\tTHST\t10:06:23\nsell\t08/24/2019\t201.1.72.233\toco\t40.432\t1901.2672\tX\t11:54:05\nsell\t08/13/2019\t168.10.34.72\tcmo\t13.065\t1601.1534\tEME\t14:35:43\nbuy\t08/26/2019\t203.236.227.188\tcmo\t3.5475\t1525.121\tSELF\t19:56:04\nbuy\t08/22/2019\t198.96.148.9\tquote\t26.9304\t1534.2015\tBBOX\t9:39:26\nsell\t08/19/2019\tnull\tquote\t19.6416\tnull\tRDIB\t14:18:21\nsell\t08/14/2019\t219.55.23.144\toco\t19.17\t2519.3168\tNEE\t21:18:36\nsell\t08/28/2019\t205.5.198.133\tcross\t19.4798\t2489.1864\tEV\t16:25:01\nbuy\t08/06/2019\t116.233.32.197\tmarketToLimit\t5.7359\t3176.4891\tWTI\t8:47:43\nsell\t08/16/2019\t19.30.57.54\tcmo\t17.6471\t1176.18\tDAL\t13:24:28\nsell\t08/08/2019\t195.186.23.139\tbatch\t23.9206\t1862.1175\tAGZD\t1:22:07\nbuy\t08/29/2019\t161.52.42.192\tbatch\t14.2275\t2923.354\tCPLA\t0:32:51\nsell\t08/12/2019\t229.130.79.209\tcross\t13.1454\t1723.1232\tAPLP\t17:24:33\nbuy\t08/25/2019\t150.17.19.149\tlimit\t28.4592\t2149.0652\tCFFN\t12:27:20\nbuy\t08/23/2019\t38.249.185.235\tcross\t25.1256\t2127.6756\tSONC\t6:37:08\nsell\t08/02/2019\t128.156.51.168\tmarket\t35.6328\t2426.5216\tDDE\t3:43:13\nbuy\t08/27/2019\t248.247.110.144\tcross\t15.1946\t1415.5484\tMDGS\t17:15:21\nsell\t08/18/2019\t209.116.20.213\tcross\t8.3334\t3777.3033\tQEP\t10:19:55\nbuy\t08/11/2019\t225.114.95.113\tlimit\t10.6596\t2543.898\tDAR\t9:33:49\nbuy\t08/08/2019\t175.143.138.15\tquote\t33.9512\t1773.5386\tFFC\t7:08:20\nbuy\t08/12/2019\t155.133.221.160\tquote\t7.2072\t1164.4412\tREGI\t17:10:24\nsell\t08/02/2019\tnull\tmarketToLimit\t28.352\tnull\tREIS\t19:09:24\nsell\t08/10/2019\t250.174.95.81\tmarketToLimit\t23.142\t2565.0534\tHLG\t9:21:10\nsell\t08/08/2019\t67.53.43.242\tmarket\t22.7427\t1911.8036\tOXBR\t10:31:53\nbuy\t08/24/2019\t41.131.90.136\tmarket\t12.3375\t2784.8749\tHURC\t8:20:20\nsell\t08/18/2019\t69.245.102.87\tquote\t21.6944\t1554.552\tTSLF\t21:42:33\nbuy\t08/16/2019\t7.197.46.90\toco\t30.8765\t2470.8587\tBYD\t20:48:01\nsell\t08/07/2019\t15.142.7.130\tbatch\t22.599\t1531.926\tBREW\t10:57:00\nbuy\t08/10/2019\t176.97.187.35\tcross\t34.675\t473.7439\tSTAR^D\t17:00:51\nbuy\t08/26/2019\t52.55.1.57\tquote\t20.735\t1817.2428\tEVN\t1:53:34\nsell\t08/17/2019\t51.131.196.14\tlimit\t30.56\t2480.594\tTA\t14:58:12\nnull\t08/18/2019\t62.254.181.90\tquote\t15.9435\t1930.9568\tBML^L\t3:04:34\nsell\t08/22/2019\t99.205.224.12\tquote\t17.953\t2798.5653\tABTX\t15:04:16\nsell\t08/10/2019\tnull\tbestLimit\t32.2889\tnull\tVSEC\t16:36:40\nsell\t08/07/2019\t32.36.227.3\toco\t22.6592\t2093.5795\tSAMG\t8:05:18\nbuy\t08/23/2019\t140.56.43.104\tbatch\t8.48\t4483.0374\tPSA^D\t23:46:50\nbuy\t08/28/2019\t136.243.1.239\tbestLimit\t9.0944\t1757.3683\tCCIH\t0:46:58\nsell\t08/15/2019\t105.21.8.36\tlimit\t7.15\t835.208\tMANH\t22:17:08\nbuy\t08/08/2019\t206.134.231.203\tquote\t9.7704\t1289.2146\tISCA\t4:26:41\nsell\t08/24/2019\t234.170.122.27\tbestLimit\t10.9098\t2271.7827\tTCMD\t12:38:18\nbuy\t08/27/2019\t222.105.102.215\tbatch\t5.5368\t2131.9092\tUSPH\t2:16:38\nbuy\t08/03/2019\t185.222.75.166\tlimit\t4.8807\t497.4892\tHBM\t1:00:27\nbuy\t08/02/2019\t220.162.163.0\tbatch\t19.9769\t1009.184\tCEQP\t4:22:58\nbuy\t08/05/2019\t58.229.238.44\toco\t12.0786\t1554.1695\tHOV\t8:07:50\nsell\t08/06/2019\t187.199.220.182\tlimit\t15.47\t1703.597\tSPSC\t13:27:15\nsell\t08/13/2019\t171.115.45.72\tquote\t23.9686\t1690.9136\tIEUS\t10:43:58\nsell\t08/05/2019\t29.210.44.85\tlimit\t45.6244\t1486.242\tGWPH\t20:32:18\nsell\t08/21/2019\t196.17.87.246\tcross\t22.4664\t2811.3806\tDNOW\t7:55:42\nbuy\t08/27/2019\t75.162.192.239\tcross\t36.3825\t3492.5826\tMCEP\t9:43:47\nsell\t08/28/2019\tnull\tcross\t23.8792\tnull\tCLA.CL\t11:31:22\nsell\t08/10/2019\t40.120.124.24\tmarketToLimit\t44.982\t1430.6831\tTECD\t12:45:16\nbuy\t08/09/2019\t8.67.86.22\tquote\t17.7424\t4353.9805\tMTU\t18:23:46\nsell\t08/08/2019\t111.46.139.85\tbatch\t42.0772\t964.6332\tDOV\t21:55:46\nsell\t08/11/2019\t181.31.81.124\tcmo\t42.935\t1561.9342\tRDUS\t14:30:58\nsell\t08/15/2019\t203.109.184.101\tcmo\t24.6726\t1746.5008\tPZZA\t7:23:50\nbuy\t08/02/2019\tnull\tcmo\t26.3725\tnull\tJHS\t2:44:01\nsell\t08/15/2019\t184.6.152.168\tbestLimit\t13.4673\t2735.7624\tMXWL\t22:29:12\nbuy\t08/04/2019\t103.88.221.98\tbestLimit\t10.7937\t102.779\tEVHC^\t7:38:58\nnull\t08/11/2019\t105.254.0.218\tmarketToLimit\t8.0545\t1576.4658\tCSGS\t14:08:04\nsell\t08/19/2019\t51.91.141.52\tcmo\t32.6136\t751.0965\tUNF\t11:41:28\nbuy\t08/21/2019\t123.41.160.48\tmarket\t34.4324\t3594.6295\tVEDL\t17:52:21\nbuy\t08/28/2019\t81.33.128.233\tbestLimit\t14.4\t570.528\tUTHR\t3:59:11\nbuy\t08/03/2019\t131.194.218.209\tbatch\t10.4832\t1720.0167\tCBO\t5:54:08\nbuy\t08/25/2019\t10.16.129.221\tmarket\t6.2894\t1381.4806\tBHVN\t9:27:19\nsell\t08/08/2019\t202.98.8.144\toco\t16.7464\t3198.879\tABEOW\t13:15:53\nsell\t08/02/2019\t105.99.188.140\tmarket\t24.2188\t2504.3922\tSKT\t14:29:16\nsell\t08/01/2019\t108.129.105.251\tmarket\t21.6986\t769.6756\tLYTS\t1:08:19\nsell\t08/21/2019\t10.166.197.84\tcmo\t17.8632\t1847.2052\tFCEL\t4:36:17\nsell\t08/30/2019\t160.70.184.241\tmarket\t28.8252\t2882.684\tMUE\t17:48:03\nsell\t08/25/2019\t252.72.16.71\tbatch\t21.1464\t2135.6296\tMFT\t14:31:19\nbuy\t08/17/2019\tnull\tmarketToLimit\t14.592\tnull\tNTGR\t4:51:23\nsell\t08/05/2019\t115.53.90.51\tbestLimit\t10.098\t2240.8662\tIVFVC\t16:20:07\nsell\t08/22/2019\t141.208.235.65\tmarket\t6.6822\t2667.5564\tWCFB\t18:31:30\nsell\t08/28/2019\t245.17.59.89\tcross\t21.389\t1532.1469\tKWN\t10:44:17\nsell\t08/20/2019\t125.254.151.192\toco\t14.3676\t2101.8858\tMOXC\t18:29:43\nbuy\t08/24/2019\tnull\tquote\t38.467\tnull\tPZC\t8:10:06\nbuy\t08/17/2019\t210.250.193.234\tbatch\t36.5688\t1421.8749\tSMMT\t13:51:31\nbuy\t08/11/2019\t147.189.128.229\tmarket\t23.226\t1995.8848\tCOF\t21:05:30\nbuy\t08/07/2019\t2.14.161.143\tmarketToLimit\t8.14\t862.288\tBCH\t18:29:10\nbuy\t08/28/2019\t86.181.186.190\toco\t22.958\t2880.7416\tQTNT\t3:23:06\nsell\t08/11/2019\tnull\tmarket\t13.0919\tnull\tGOVNI\t8:27:21\nsell\t08/29/2019\t137.147.175.118\tmarket\t11.8852\t2585.9646\tLWAY\t19:14:09\nsell\t08/12/2019\t247.183.154.196\tlimit\t18.5736\t742.5366\tBLDR\t22:09:03\nbuy\t08/10/2019\t44.38.155.162\tmarketToLimit\t16.8945\t437.9538\tSLTB\t12:53:10\nbuy\t08/17/2019\tnull\tquote\t20.9196\tnull\tPCQ\t5:20:01\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdataFile\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m \u003d /tmp/DataQuality/source/\n\u001b[1m\u001b[34mdatasource\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Dataset[org.apache.spark.sql.Row]\u001b[0m \u003d [buysell: string, date: string ... 6 more fields]\n"
+          }
+        ]
+      },
       "apps": [],
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1597701094822_-1564092910",
       "id": "paragraph_1588765525171_-1521255137",
       "dateCreated": "2020-08-17 21:51:34.822",
-      "status": "READY"
+      "dateStarted": "2020-08-26 11:27:47.077",
+      "dateFinished": "2020-08-26 11:27:55.376",
+      "status": "FINISHED"
     },
     {
-      "text": "//Analyzer \n\nimport com.amazon.deequ.analyzers.runners.{AnalysisRunner, AnalyzerContext}\nimport com.amazon.deequ.analyzers.runners.AnalyzerContext.successMetricsAsDataFrame\nimport com.amazon.deequ.analyzers.{Size, Completeness, Mean,CountDistinct,Uniqueness}\n\nval analysisResult: AnalyzerContext \u003d { AnalysisRunner\n  // data to run the analysis on\n  .onData(datasource)\n  // define analyzers that compute metrics\n.addAnalyzer(Size())\n.addAnalyzer(ApproxCountDistinct(\"symbol\"))\n.addAnalyzer(Distinctness(\"symbol\"))\n.addAnalyzer(Completeness(\"ipaddr\"))\n.addAnalyzer(Completeness(\"quantity\"))\n.addAnalyzer(Completeness(\"price\"))\n.addAnalyzer(Maximum(\"price\"))\n.addAnalyzer(Compliance(\"top quantity\", \"quantity \u003e\u003d 0\"))\n  // compute metrics\n  .run()\n}\n\n// retrieve successfully computed metrics as a Spark data frame\nval metrics \u003d successMetricsAsDataFrame(spark, analysisResult)\nmetrics.show()",
+      "text": "//Analyzer \n\nimport com.amazon.deequ.analyzers.runners.{AnalysisRunner, AnalyzerContext}\nimport com.amazon.deequ.analyzers.runners.AnalyzerContext.successMetricsAsDataFrame\nimport com.amazon.deequ.analyzers.{Size, Completeness, Mean,CountDistinct,Uniqueness, ApproxCountDistinct, Distinctness,Maximum,Compliance}\n\nval analysisResult: AnalyzerContext \u003d { AnalysisRunner\n  // data to run the analysis on\n  .onData(datasource)\n  // define analyzers that compute metrics\n.addAnalyzer(Size())\n.addAnalyzer(ApproxCountDistinct(\"date\"))\n.addAnalyzer(Distinctness(\"ipaddr\"))\n.addAnalyzer(Completeness(\"ipaddr\"))\n.addAnalyzer(Completeness(\"quantity\"))\n.addAnalyzer(Completeness(\"price\"))\n.addAnalyzer(Maximum(\"price\"))\n.addAnalyzer(Compliance(\"top quantity\", \"quantity \u003e\u003d 0\"))\n  // compute metrics\n  .run()\n}\n\n// retrieve successfully computed metrics as a Spark data frame\nval metrics \u003d successMetricsAsDataFrame(spark, analysisResult)\nmetrics.show()",
       "user": "anonymous",
-      "dateUpdated": "2020-08-17 21:51:34.824",
+      "dateUpdated": "2020-08-26 11:31:22.512",
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -195,18 +345,29 @@
       "settings": {
         "params": {},
         "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+------------+-------------------+-------+\n| entity|    instance|               name|  value|\n+-------+------------+-------------------+-------+\n| Column|        date|ApproxCountDistinct|   31.0|\n| Column|      ipaddr|       Distinctness|  0.963|\n| Column|    quantity|       Completeness|  0.963|\n| Column|       price|       Completeness|  0.984|\n| Column|       price|            Maximum|59.5386|\n|Dataset|           *|               Size| 1000.0|\n| Column|      ipaddr|       Completeness|  0.963|\n| Column|top quantity|         Compliance|  0.958|\n+-------+------------+-------------------+-------+\n\nimport com.amazon.deequ.analyzers.runners.{AnalysisRunner, AnalyzerContext}\nimport com.amazon.deequ.analyzers.runners.AnalyzerContext.successMetricsAsDataFrame\nimport com.amazon.deequ.analyzers.{Size, Completeness, Mean, CountDistinct, Uniqueness, ApproxCountDistinct, Distinctness, Maximum, Compliance}\n\u001b[1m\u001b[34manalysisResult\u001b[0m: \u001b[1m\u001b[32mcom.amazon.deequ.analyzers.runners.AnalyzerContext\u001b[0m \u003d AnalyzerContext(Map(ApproxCountDistinct(date,None) -\u003e DoubleMetric(Column,ApproxCountDistinct,date,Success(31.0)), Distinctness(List(ipaddr)) -\u003e DoubleMetric(Column,Distinctness,ipaddr,Success(0.963)), Completeness(quantity,None) -\u003e DoubleMetric(Column,Completeness,quantity,Success(0.963)), Completeness(price,None) -\u003e DoubleMetric(Column,Completeness,price,Success(0.984)), Maximum(price,None) -\u003e..."
+          }
+        ]
       },
       "apps": [],
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1597701094824_1195244382",
       "id": "paragraph_1588861527405_1788372748",
       "dateCreated": "2020-08-17 21:51:34.824",
-      "status": "READY"
+      "dateStarted": "2020-08-26 11:31:22.531",
+      "dateFinished": "2020-08-26 11:31:48.810",
+      "status": "FINISHED"
     },
     {
       "text": "import com.amazon.deequ.profiles.{ColumnProfilerRunner, NumericColumnProfile}\n\nval result \u003d {ColumnProfilerRunner()\n      .onData(datasource)\n      .run()}\n\nresult.profiles.foreach { case (productName, profile) \u003d\u003e\n\n      println(s\"Column \u0027$productName\u0027:\\n \" +\n        s\"\\tcompleteness: ${profile.completeness}\\n\" +\n        s\"\\tapproximate number of distinct values: ${profile.approximateNumDistinctValues}\\n\" +\n        s\"\\tdatatype: ${profile.dataType}\\n\")\n    }",
       "user": "anonymous",
-      "dateUpdated": "2020-08-17 21:51:34.825",
+      "dateUpdated": "2020-08-26 11:35:03.526",
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -223,18 +384,29 @@
       "settings": {
         "params": {},
         "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Column \u0027quantity\u0027:\n \tcompleteness: 0.963\n\tapproximate number of distinct values: 889\n\tdatatype: Fractional\n\nColumn \u0027price\u0027:\n \tcompleteness: 0.984\n\tapproximate number of distinct values: 1006\n\tdatatype: Fractional\n\nColumn \u0027ipaddr\u0027:\n \tcompleteness: 0.963\n\tapproximate number of distinct values: 992\n\tdatatype: String\n\nColumn \u0027symbol\u0027:\n \tcompleteness: 1.0\n\tapproximate number of distinct values: 936\n\tdatatype: String\n\nColumn \u0027date\u0027:\n \tcompleteness: 1.0\n\tapproximate number of distinct values: 31\n\tdatatype: String\n\nColumn \u0027ordertype\u0027:\n \tcompleteness: 1.0\n\tapproximate number of distinct values: 9\n\tdatatype: String\n\nColumn \u0027buysell\u0027:\n \tcompleteness: 0.97\n\tapproximate number of distinct values: 2\n\tdatatype: String\n\nColumn \u0027time\u0027:\n \tcompleteness: 1.0\n\tapproximate number of distinct values: 1041\n\tdatatype: String\n\nimport com.amazon.deequ.profiles.{ColumnProfilerRunner, NumericColumnProfile}\n\u001b[1m\u001b[34mresult\u001b[0m: \u001b[1m\u001b[32mcom.amazon.deequ.profiles.ColumnProfiles\u001b[0m \u003d ColumnProfiles(Map(quantity -\u003e NumericColumnProfile(quantity,0.963,889,Fractional,false,Map(),None,Some(2027.5523688473522),Some(5027.3286),Some(-1.0),Some(1952532.9312000002),Some(991.8386197338217),Some(Stream(-1.0, ?))), price -\u003e NumericColumnProfile(price,0.984,1006,Fractional,false,Map(),None,Some(21.258178556910572),Some(59.5386),Some(2.7725),Some(20918.047700000003),Some(10.542181560747943),Some(Stream(2.7725, ?))), ipaddr -\u003e StandardColumnProfile(ipaddr,0.963,992,String,true,Map(Boolean -\u003e 0, Fractional -\u003e 0, Integral -\u003e 0, Unknown -\u003e 37, String -\u003e 963),None), symbol -\u003e StandardColumnProfile(symbol,1.0,936,String,true,Map(Bool..."
+          }
+        ]
       },
       "apps": [],
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1597701094825_-641592233",
       "id": "paragraph_1588862314625_-737447953",
       "dateCreated": "2020-08-17 21:51:34.825",
-      "status": "READY"
+      "dateStarted": "2020-08-26 11:35:03.547",
+      "dateFinished": "2020-08-26 11:35:09.900",
+      "status": "FINISHED"
     },
     {
       "text": "val priceProfile \u003d result.profiles(\"price\").asInstanceOf[NumericColumnProfile]\n\nprintln(s\"Statistics of \u0027priceProfile\u0027:\\n\" +\n  s\"\\tminimum: ${priceProfile.minimum.get}\\n\" +\n  s\"\\tmaximum: ${priceProfile.maximum.get}\\n\" +\n  s\"\\tmean: ${priceProfile.mean.get}\\n\" +\n  s\"\\tstandard deviation: ${priceProfile.stdDev.get}\\n\")",
       "user": "anonymous",
-      "dateUpdated": "2020-08-17 21:51:34.825",
+      "dateUpdated": "2020-08-26 11:37:11.694",
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -251,18 +423,29 @@
       "settings": {
         "params": {},
         "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Statistics of \u0027priceProfile\u0027:\n\tminimum: 2.7725\n\tmaximum: 59.5386\n\tmean: 21.258178556910572\n\tstandard deviation: 10.542181560747943\n\n\u001b[1m\u001b[34mpriceProfile\u001b[0m: \u001b[1m\u001b[32mcom.amazon.deequ.profiles.NumericColumnProfile\u001b[0m \u003d NumericColumnProfile(price,0.984,1006,Fractional,false,Map(),None,Some(21.258178556910572),Some(59.5386),Some(2.7725),Some(20918.047700000003),Some(10.542181560747943),Some(Stream(2.7725, ?)))\n"
+          }
+        ]
       },
       "apps": [],
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1597701094825_391125739",
       "id": "paragraph_1588863233170_-499728604",
       "dateCreated": "2020-08-17 21:51:34.825",
-      "status": "READY"
+      "dateStarted": "2020-08-26 11:37:11.710",
+      "dateFinished": "2020-08-26 11:37:12.551",
+      "status": "FINISHED"
     },
     {
       "text": "val orderTypeProfile \u003d result.profiles(\"ordertype\")\n\nprintln(\"Value distribution in \u0027ordertype\u0027:\")\norderTypeProfile.histogram.foreach {\n  _.values.foreach { case (key, entry) \u003d\u003e\n    println(s\"\\t\u0027$key\u0027 occurred ${entry.absolute} times (ratio is ${entry.ratio})\")\n  }\n}",
       "user": "anonymous",
-      "dateUpdated": "2020-08-17 21:51:34.825",
+      "dateUpdated": "2020-08-26 11:37:18.221",
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -279,18 +462,29 @@
       "settings": {
         "params": {},
         "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Value distribution in \u0027ordertype\u0027:\n\t\u0027oco\u0027 occurred 109 times (ratio is 0.109)\n\t\u0027market\u0027 occurred 129 times (ratio is 0.129)\n\t\u0027marketToLimit\u0027 occurred 86 times (ratio is 0.086)\n\t\u0027quote\u0027 occurred 132 times (ratio is 0.132)\n\t\u0027batch\u0027 occurred 108 times (ratio is 0.108)\n\t\u0027bestLimit\u0027 occurred 92 times (ratio is 0.092)\n\t\u0027cross\u0027 occurred 107 times (ratio is 0.107)\n\t\u0027cmo\u0027 occurred 116 times (ratio is 0.116)\n\t\u0027limit\u0027 occurred 121 times (ratio is 0.121)\n\u001b[1m\u001b[34morderTypeProfile\u001b[0m: \u001b[1m\u001b[32mcom.amazon.deequ.profiles.ColumnProfile\u001b[0m \u003d StandardColumnProfile(ordertype,1.0,9,String,true,Map(Boolean -\u003e 0, Fractional -\u003e 0, Integral -\u003e 0, Unknown -\u003e 0, String -\u003e 1000),Some(Distribution(Map(oco -\u003e DistributionValue(109,0.109), market -\u003e DistributionValue(129,0.129), marketToLimit -\u003e DistributionValue(86,0.086), quote -\u003e DistributionValue(132,0.132), batch -\u003e DistributionValue(108,0.108), bestLimit -\u003e DistributionValue(92,0.092), cross -\u003e DistributionValue(107,0.107), cmo -\u003e DistributionValue(116,0.116), limit -\u003e DistributionValue(121,0.121)),9)))\n"
+          }
+        ]
       },
       "apps": [],
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1597701094825_585170747",
       "id": "paragraph_1588863312441_-1200939799",
       "dateCreated": "2020-08-17 21:51:34.825",
-      "status": "READY"
+      "dateStarted": "2020-08-26 11:37:18.237",
+      "dateFinished": "2020-08-26 11:37:19.447",
+      "status": "FINISHED"
     },
     {
       "text": "   val verificationResult: VerificationResult \u003d { VerificationSuite()\n      // data to run the verification on\n      .onData(datasource)\n      // define a data quality check\n      .addCheck(\n       Check(CheckLevel.Error, \"unitTest\")\n      .hasMax(\"quantity\", _ \u003c\u003d 10000) // max is 10000\n      .hasCompleteness(\"ipaddr\", _ \u003e\u003d 0.95) // 95%+ non-null IPs\n      .isNonNegative(\"quantity\")) // should not contain negative values\n        .addCheck(  \n        Check(CheckLevel.Warning, \"Checks\")\n         .hasSize(_ \u003e\u003d 1001))\n        .run()\n    }\n\n    val resultDataFrame \u003d checkResultsAsDataFrame(spark, verificationResult)\n    println(resultDataFrame.show(truncate\u003dfalse))\n    val resultJson \u003d checkResultsAsJson(verificationResult )\n    println(resultJson)",
       "user": "anonymous",
-      "dateUpdated": "2020-08-17 21:51:34.825",
+      "dateUpdated": "2020-08-26 13:16:48.445",
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -307,18 +501,29 @@
       "settings": {
         "params": {},
         "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u003cconsole\u003e:58: \u001b[31merror: \u001b[0mtype mismatch;\n found   : String(\"price\")\n required: Double \u003d\u003e Boolean\n             .isNonNegative(\"quantity\", \"price\")) // should not contain negative values\n                                        ^\n"
+          }
+        ]
       },
       "apps": [],
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1597701094825_-1741424713",
       "id": "paragraph_1588863674616_2125299254",
       "dateCreated": "2020-08-17 21:51:34.825",
-      "status": "READY"
+      "dateStarted": "2020-08-26 13:15:29.572",
+      "dateFinished": "2020-08-26 13:15:30.016",
+      "status": "ERROR"
     },
     {
       "text": "\n//Suggestion Data\n\nval suggestionResult \u003d {\n      ConstraintSuggestionRunner()\n        // data to suggest constraints for\n        .onData(datasource)\n        // default set of rules for constraint suggestion\n        .addConstraintRules(Rules.DEFAULT)\n        // run data profiling and constraint suggestion\n        .run()\n    }\n suggestionResult.constraintSuggestions.foreach { case (column, suggestions) \u003d\u003e\n  suggestions.foreach { suggestion \u003d\u003e\n    println(s\"Constraint suggestion for \u0027$column\u0027:\\t${suggestion.description}\\n\" +\n      s\"The corresponding scala code is ${suggestion.codeForConstraint}\\n\")\n  }\n}",
       "user": "anonymous",
-      "dateUpdated": "2020-08-17 21:51:34.826",
+      "dateUpdated": "2020-08-26 11:45:38.128",
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -335,18 +540,29 @@
       "settings": {
         "params": {},
         "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Constraint suggestion for \u0027quantity\u0027:\t\u0027quantity\u0027 has less than 5% missing values\nThe corresponding scala code is .hasCompleteness(\"quantity\", _ \u003e\u003d 0.95, Some(\"It should be above 0.95!\"))\n\nConstraint suggestion for \u0027price\u0027:\t\u0027price\u0027 has less than 3% missing values\nThe corresponding scala code is .hasCompleteness(\"price\", _ \u003e\u003d 0.97, Some(\"It should be above 0.97!\"))\n\nConstraint suggestion for \u0027price\u0027:\t\u0027price\u0027 has no negative values\nThe corresponding scala code is .isNonNegative(\"price\")\n\nConstraint suggestion for \u0027ipaddr\u0027:\t\u0027ipaddr\u0027 has less than 5% missing values\nThe corresponding scala code is .hasCompleteness(\"ipaddr\", _ \u003e\u003d 0.95, Some(\"It should be above 0.95!\"))\n\nConstraint suggestion for \u0027symbol\u0027:\t\u0027symbol\u0027 is not null\nThe corresponding scala code is .isComplete(\"symbol\")\n\nConstraint suggestion for \u0027date\u0027:\t\u0027date\u0027 is not null\nThe corresponding scala code is .isComplete(\"date\")\n\nConstraint suggestion for \u0027date\u0027:\t\u0027date\u0027 has value range \u002708/15/2019\u0027, \u002708/08/2019\u0027, \u002708/12/2019\u0027, \u002708/22/2019\u0027, \u002708/07/2019\u0027, \u002708/26/2019\u0027, \u002708/18/2019\u0027, \u002708/10/2019\u0027, \u002708/11/2019\u0027, \u002708/27/2019\u0027, \u002708/02/2019\u0027, \u002708/23/2019\u0027, \u002708/16/2019\u0027, \u002708/29/2019\u0027, \u002708/30/2019\u0027, \u002708/21/2019\u0027, \u002708/24/2019\u0027, \u002708/06/2019\u0027, \u002708/19/2019\u0027, \u002708/17/2019\u0027, \u002708/25/2019\u0027, \u002708/20/2019\u0027, \u002708/28/2019\u0027, \u002708/09/2019\u0027, \u002708/04/2019\u0027, \u002708/05/2019\u0027, \u002708/03/2019\u0027, \u002708/01/2019\u0027, \u002708/13/2019\u0027, \u002708/14/2019\u0027\nThe corresponding scala code is .isContainedIn(\"date\", Array(\"08/15/2019\", \"08/08/2019\", \"08/12/2019\", \"08/22/2019\", \"08/07/2019\", \"08/26/2019\", \"08/18/2019\", \"08/10/2019\", \"08/11/2019\", \"08/27/2019\", \"08/02/2019\", \"08/23/2019\", \"08/16/2019\", \"08/29/2019\", \"08/30/2019\", \"08/21/2019\", \"08/24/2019\", \"08/06/2019\", \"08/19/2019\", \"08/17/2019\", \"08/25/2019\", \"08/20/2019\", \"08/28/2019\", \"08/09/2019\", \"08/04/2019\", \"08/05/2019\", \"08/03/2019\", \"08/01/2019\", \"08/13/2019\", \"08/14/2019\"))\n\nConstraint suggestion for \u0027date\u0027:\t\u0027date\u0027 has value range \u002708/15/2019\u0027, \u002708/08/2019\u0027, \u002708/12/2019\u0027, \u002708/22/2019\u0027, \u002708/07/2019\u0027, \u002708/26/2019\u0027, \u002708/18/2019\u0027, \u002708/10/2019\u0027, \u002708/11/2019\u0027, \u002708/27/2019\u0027, \u002708/02/2019\u0027, \u002708/23/2019\u0027, \u002708/16/2019\u0027, \u002708/29/2019\u0027, \u002708/30/2019\u0027, \u002708/21/2019\u0027, \u002708/24/2019\u0027, \u002708/06/2019\u0027, \u002708/19/2019\u0027, \u002708/17/2019\u0027, \u002708/25/2019\u0027, \u002708/20/2019\u0027, \u002708/28/2019\u0027, \u002708/09/2019\u0027, \u002708/04/2019\u0027, \u002708/05/2019\u0027 for at least 88.0% of values\nThe corresponding scala code is .isContainedIn(\"date\", Array(\"08/15/2019\", \"08/08/2019\", \"08/12/2019\", \"08/22/2019\", \"08/07/2019\", \"08/26/2019\", \"08/18/2019\", \"08/10/2019\", \"08/11/2019\", \"08/27/2019\", \"08/02/2019\", \"08/23/2019\", \"08/16/2019\", \"08/29/2019\", \"08/30/2019\", \"08/21/2019\", \"08/24/2019\", \"08/06/2019\", \"08/19/2019\", \"08/17/2019\", \"08/25/2019\", \"08/20/2019\", \"08/28/2019\", \"08/09/2019\", \"08/04/2019\", \"08/05/2019\"), _ \u003e\u003d 0.88, Some(\"It should be above 0.88!\"))\n\nConstraint suggestion for \u0027ordertype\u0027:\t\u0027ordertype\u0027 is not null\nThe corresponding scala code is .isComplete(\"ordertype\")\n\nConstraint suggestion for \u0027ordertype\u0027:\t\u0027ordertype\u0027 has value range \u0027quote\u0027, \u0027market\u0027, \u0027limit\u0027, \u0027cmo\u0027, \u0027oco\u0027, \u0027batch\u0027, \u0027cross\u0027, \u0027bestLimit\u0027, \u0027marketToLimit\u0027\nThe corresponding scala code is .isContainedIn(\"ordertype\", Array(\"quote\", \"market\", \"limit\", \"cmo\", \"oco\", \"batch\", \"cross\", \"bestLimit\", \"marketToLimit\"))\n\nConstraint suggestion for \u0027ordertype\u0027:\t\u0027ordertype\u0027 has value range \u0027quote\u0027, \u0027market\u0027, \u0027limit\u0027, \u0027cmo\u0027, \u0027oco\u0027, \u0027batch\u0027, \u0027cross\u0027, \u0027bestLimit\u0027 for at least 89.0% of values\nThe corresponding scala code is .isContainedIn(\"ordertype\", Array(\"quote\", \"market\", \"limit\", \"cmo\", \"oco\", \"batch\", \"cross\", \"bestLimit\"), _ \u003e\u003d 0.89, Some(\"It should be above 0.89!\"))\n\nConstraint suggestion for \u0027buysell\u0027:\t\u0027buysell\u0027 has less than 5% missing values\nThe corresponding scala code is .hasCompleteness(\"buysell\", _ \u003e\u003d 0.95, Some(\"It should be above 0.95!\"))\n\nConstraint suggestion for \u0027buysell\u0027:\t\u0027buysell\u0027 has value range \u0027sell\u0027, \u0027buy\u0027\nThe corresponding scala code is .isContainedIn(\"buysell\", Array(\"sell\", \"buy\"))\n\nConstraint suggestion for \u0027buysell\u0027:\t\u0027buysell\u0027 has value range \u0027sell\u0027, \u0027buy\u0027 for at least 95.0% of values\nThe corresponding scala code is .isContainedIn(\"buysell\", Array(\"sell\", \"buy\"), _ \u003e\u003d 0.95, Some(\"It should be above 0.95!\"))\n\nConstraint suggestion for \u0027time\u0027:\t\u0027time\u0027 is not null\nThe corresponding scala code is .isComplete(\"time\")\n\n\u001b[1m\u001b[34msuggestionResult\u001b[0m: \u001b[1m\u001b[32mcom.amazon.deequ.suggestions.ConstraintSuggestionResult\u001b[0m \u003d ConstraintSuggestionResult(Map(quantity -\u003e NumericColumnProfile(quantity,0.963,889,Fractional,false,Map(),None,Some(2027.5523688473522),Some(5027.3286),Some(-1.0),Some(1952532.9312000002),Some(991.8386197338217),Some(Stream(-1.0, ?))), price -\u003e NumericColumnProfile(price,0.984,1006,Fractional,false,Map(),None,Some(21.258178556910572),Some(59.5386),Some(2.7725),Some(20918.047700000003),Some(10.542181560747943),Some(Stream(2.7725, ?))), ipaddr -\u003e StandardColumnProfile(ipaddr,0.963,992,String,true,Map(Boolean -\u003e 0, Fractional -\u003e 0, Integral -\u003e 0, Unknown -\u003e 37, String -\u003e 963),None), symbol -\u003e StandardColumnProfile(symbol,1.0,936,String,true,Map(Boolean -\u003e 0, Fractional -\u003e 0, Integral -\u003e 0,..."
+          }
+        ]
       },
       "apps": [],
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1597701094825_2009704706",
       "id": "paragraph_1588765688368_-1188383627",
       "dateCreated": "2020-08-17 21:51:34.826",
-      "status": "READY"
+      "dateStarted": "2020-08-26 11:45:38.144",
+      "dateFinished": "2020-08-26 11:45:42.381",
+      "status": "FINISHED"
     },
     {
       "text": "//Anomaly detection\n\nimport com.amazon.deequ.VerificationSuite\nimport com.amazon.deequ.analyzers.Size\nimport com.amazon.deequ.anomalydetection._\nimport com.amazon.deequ.repository.ResultKey\nimport com.amazon.deequ.repository.memory.InMemoryMetricsRepository\nimport com.amazon.deequ.checks.CheckStatus._\n\nval metricsRepository \u003d new InMemoryMetricsRepository()\nval yesterdaysDataset \u003d datasource.limit(5)\n  \nval yesterdaysKey \u003d ResultKey(System.currentTimeMillis() - 24 * 60 * 1000)\n\nVerificationSuite()\n  .onData(yesterdaysDataset)\n  .useRepository(metricsRepository)\n  .saveOrAppendResult(yesterdaysKey)\n  .addAnomalyCheck(\n    RelativeRateOfChangeStrategy(maxRateIncrease \u003d Some(2.0)),\n    Size())\n  .run()",
       "user": "anonymous",
-      "dateUpdated": "2020-08-17 21:51:34.826",
+      "dateUpdated": "2020-08-26 11:46:38.661",
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -363,18 +579,29 @@
       "settings": {
         "params": {},
         "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import com.amazon.deequ.VerificationSuite\nimport com.amazon.deequ.analyzers.Size\nimport com.amazon.deequ.anomalydetection._\nimport com.amazon.deequ.repository.ResultKey\nimport com.amazon.deequ.repository.memory.InMemoryMetricsRepository\nimport com.amazon.deequ.checks.CheckStatus._\n\u001b[1m\u001b[34mmetricsRepository\u001b[0m: \u001b[1m\u001b[32mcom.amazon.deequ.repository.memory.InMemoryMetricsRepository\u001b[0m \u003d com.amazon.deequ.repository.memory.InMemoryMetricsRepository@170194fa\n\u001b[1m\u001b[34myesterdaysDataset\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Dataset[org.apache.spark.sql.Row]\u001b[0m \u003d [buysell: string, date: string ... 6 more fields]\n\u001b[1m\u001b[34myesterdaysKey\u001b[0m: \u001b[1m\u001b[32mcom.amazon.deequ.repository.ResultKey\u001b[0m \u003d ResultKey(1598440959763,Map())\n\u001b[1m\u001b[34mres11\u001b[0m: \u001b[1m\u001b[32mcom.amazon.deequ.VerificationResult\u001b[0m \u003d Ve..."
+          }
+        ]
       },
       "apps": [],
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1597701094826_1469662882",
       "id": "paragraph_1588771181374_354449462",
       "dateCreated": "2020-08-17 21:51:34.826",
-      "status": "READY"
+      "dateStarted": "2020-08-26 11:46:38.676",
+      "dateFinished": "2020-08-26 11:46:40.385",
+      "status": "FINISHED"
     },
     {
       "text": "val todaysKey \u003d ResultKey(System.currentTimeMillis())\n\nval verificationResult \u003d VerificationSuite()\n  .onData(datasource)\n  .useRepository(metricsRepository)\n  .saveOrAppendResult(todaysKey)\n  .addAnomalyCheck(\n    RelativeRateOfChangeStrategy(maxRateIncrease \u003d Some(2.0)),\n    Size())\n  .run()",
       "user": "anonymous",
-      "dateUpdated": "2020-08-17 21:51:34.826",
+      "dateUpdated": "2020-08-26 11:46:48.322",
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -391,18 +618,29 @@
       "settings": {
         "params": {},
         "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mtodaysKey\u001b[0m: \u001b[1m\u001b[32mcom.amazon.deequ.repository.ResultKey\u001b[0m \u003d ResultKey(1598442409254,Map())\n\u001b[1m\u001b[34mverificationResult\u001b[0m: \u001b[1m\u001b[32mcom.amazon.deequ.VerificationResult\u001b[0m \u003d VerificationResult(Warning,Map(Check(Warning,Anomaly check for Size(None),List(AnomalyConstraint(Size(None)))) -\u003e CheckResult(Check(Warning,Anomaly check for Size(None),List(AnomalyConstraint(Size(None)))),Warning,List(ConstraintResult(AnomalyConstraint(Size(None)),Failure,Some(Value: 1000.0 does not meet the constraint requirement!),Some(DoubleMetric(Dataset,Size,*,Success(1000.0))))))),Map(Size(None) -\u003e DoubleMetric(Dataset,Size,*,Success(1000.0))))\n"
+          }
+        ]
       },
       "apps": [],
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1597701094826_1632147595",
       "id": "paragraph_1588773668682_234076112",
       "dateCreated": "2020-08-17 21:51:34.826",
-      "status": "READY"
+      "dateStarted": "2020-08-26 11:46:48.334",
+      "dateFinished": "2020-08-26 11:46:51.240",
+      "status": "FINISHED"
     },
     {
       "text": "metricsRepository\n    .load()\n    .forAnalyzers(Seq(Size()))\n    .getSuccessMetricsAsDataFrame(spark)\n    .show()",
       "user": "anonymous",
-      "dateUpdated": "2020-08-17 21:51:34.826",
+      "dateUpdated": "2020-08-26 11:47:01.580",
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -419,18 +657,29 @@
       "settings": {
         "params": {},
         "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+--------+----+------+-------------+\n| entity|instance|name| value| dataset_date|\n+-------+--------+----+------+-------------+\n|Dataset|       *|Size|   5.0|1598440959763|\n|Dataset|       *|Size|1000.0|1598442409254|\n+-------+--------+----+------+-------------+\n\n"
+          }
+        ]
       },
       "apps": [],
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1597701094826_-2147324677",
       "id": "paragraph_1588774862400_-2083290552",
       "dateCreated": "2020-08-17 21:51:34.826",
-      "status": "READY"
+      "dateStarted": "2020-08-26 11:47:01.599",
+      "dateFinished": "2020-08-26 11:47:02.930",
+      "status": "FINISHED"
     },
     {
       "text": "verificationResult.status",
       "user": "anonymous",
-      "dateUpdated": "2020-08-17 21:51:34.826",
+      "dateUpdated": "2020-08-26 11:47:20.463",
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -448,12 +697,23 @@
         "params": {},
         "forms": {}
       },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres13\u001b[0m: \u001b[1m\u001b[32mcom.amazon.deequ.checks.CheckStatus.Value\u001b[0m \u003d Warning\n"
+          }
+        ]
+      },
       "apps": [],
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1597701094826_2113240687",
       "id": "paragraph_1588775141484_-1293299130",
       "dateCreated": "2020-08-17 21:51:34.826",
-      "status": "READY"
+      "dateStarted": "2020-08-26 11:47:20.477",
+      "dateFinished": "2020-08-26 11:47:21.071",
+      "status": "FINISHED"
     },
     {
       "text": "%sh\n\nrm -rf  /tmp/DataQuality/",
